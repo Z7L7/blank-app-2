@@ -1,5 +1,9 @@
 import streamlit as st
 
+def app():
+    st.title("Homepage")
+    st.write("Welcome to the Humanitarian Aid Website!")
+
 # - - - Columns with images - - -
 col1, col2 = st.columns(2)
 

@@ -2,6 +2,9 @@ import streamlit as st
 import random
 import pandas as pd
 import numpy as np
+def app():
+    st.title("Chart")
+    st.write("Welcome to the Humanitarian Aid Website!")
 st.header("Yemen")
 
 tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])

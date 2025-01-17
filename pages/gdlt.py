@@ -5,4 +5,6 @@ import time
 import streamlit as st
 import numpy as np
 import pickle
-
+def app():
+    st.title("GDLT")
+    st.write("Welcome to the Humanitarian Aid Website!")

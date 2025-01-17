@@ -11,6 +11,10 @@ import streamlit as st
 import numpy as np
 import pickle
 
+def app():
+    st.title("Acaps")
+    st.write("Welcome to the Humanitarian Aid Website!")
+
 country = st.text_input("", "syria")
 st.write("The current country shown is:", country)
 
