@@ -3,7 +3,7 @@ import streamlit as st
 def main():
     # Sidebar for Navigation
     st.sidebar.title("Navigation")
-    page = st.sidebar.radio("Go to", ["Homepage", "Acaps", "GDELT"])
+    page = st.sidebar.radio("Go to", ["Homepage", "Acaps", "GDELT", "News"])
 
     # Navigation logic
     if page == "Homepage":
@@ -15,6 +15,10 @@ def main():
         acaps_api.app()
 
     elif page == "GDELT":
+        from pages import gdlt
+        gdlt.app()
+    
+    elif page == "News":
         from pages import gdlt
         gdlt.app()
 
