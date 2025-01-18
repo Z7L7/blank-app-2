@@ -19,11 +19,11 @@ def app():
     # country = st.text_input("", "afghanistan")
     # st.write("The current country shown is:", country)
     # Get the list of countries and keywords
-    country = sorted(country_code.keys())
+    countries = sorted(country_code.keys())
     #keywords = sorted(crisis_cameo_codes.keys())
 
     # Dropdown for countries
-    country = st.selectbox("Select a Country", country)
+    country = st.selectbox("Select a Country", countries)
 
     # Dropdown for keywords
     #keyword = st.selectbox("Select a Keyword", keywords)
