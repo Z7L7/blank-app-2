@@ -10,13 +10,23 @@ import time
 import streamlit as st
 import numpy as np
 import pickle
+from modules.actors import crisis_cameo_codes, country_code  # Import dictionaries correctly
 
 def app():
     st.title("Acaps")
     st.write("Welcome to the Humanitarian Aid Website!")
 
-    country = st.text_input("", "syria")
-    st.write("The current country shown is:", country)
+    # country = st.text_input("", "afghanistan")
+    # st.write("The current country shown is:", country)
+    # Get the list of countries and keywords
+    country = sorted(country_code.keys())
+    #keywords = sorted(crisis_cameo_codes.keys())
+
+    # Dropdown for countries
+    country = st.selectbox("Select a Country", country)
+
+    # Dropdown for keywords
+    #keyword = st.selectbox("Select a Keyword", keywords)
 
     # Post credentials to get an authentication token
     credentials = {

@@ -15,12 +15,12 @@ def main():
         acaps_api.app()
 
     elif page == "GDELT":
-        from pages import gdlt
-        gdlt.app()
+        from pages import gdelt
+        gdelt.app()
     
     elif page == "News":
-        from pages import gdlt
-        gdlt.app()
+        from pages import news
+        news.app()
 
     # Footer
     st.sidebar.text("Humanitarian Aid Website By:\nAsiyah Adetunji")
