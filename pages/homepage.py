@@ -1,4 +1,6 @@
 import streamlit as st
+from modules.actors import gdelt_wrapper
+import pandas as pd
 
 def app():
     st.title("Homepage")
@@ -21,3 +23,26 @@ def app():
 
     with coli4:
         st.image("https://i.pinimg.com/474x/93/1d/62/931d62501c149f08ec1643592081754e.jpg", caption="")
+
+# Function to process and display GDELT data
+def display_gdelt_data(gdelt_news_data):
+    if isinstance(gdelt_news_data, pd.DataFrame):
+        if not gdelt_news_data.empty:
+            columns_to_display = ['title', 'url', 'sourcecountry']
+
+            # Ensure all required columns are present before filtering
+            if all(col in gdelt_news_data.columns for col in columns_to_display):
+                gdelt_df_filtered = gdelt_news_data[columns_to_display]
+                st.subheader("News Data (from GDELT)")
+                st.dataframe(gdelt_df_filtered)
+            else:
+                st.warning("Some columns are missing in the GDELT data. Available columns: " + ", ".join(
+                    gdelt_news_data.columns))
+        else:
+            st.warning("No GDELT news data available for the selected criteria.")
+    else:
+        st.error("Unexpected data format for GDELT news data.")
+
+st.subheader("GDELT Search", divider='rainbow')
+st.dataframe(['gdelt_news_data'])
+
