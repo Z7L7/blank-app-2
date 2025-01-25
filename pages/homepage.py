@@ -7,6 +7,9 @@ def app():
     st.title("Finding Hope")
     st.write("Welcome to the Humanitarian Aid Website!")
 
+    st.header("How to Use This App")
+    st.write("This app uses ")
+ 
  # Get the list of countries and keywords
     countries = sorted(country_code.keys())
     keywords = sorted(crisis_cameo_codes.keys())
@@ -34,4 +37,15 @@ def app():
 
     with coli4:
         st.image("https://i.pinimg.com/474x/93/1d/62/931d62501c149f08ec1643592081754e.jpg", caption="")
+
+    # - - - Text - - -
+    coli5, coli6 = st.columns(2)
+    with coli5:
+        st.header("Why Does Humanitarian Aid Matter?")
+        st.write("Humanitarian aid is an important subject to many across the world. It is defined as the assistance provided to those in need using both logistic and material assistance. There are many humanitarian aid organizations such as UNICEF and Doctors Without Boarders")
+
+    with coli6:
+        st.header("How to Contribute to Humanitarian Aid")
+        st.write("Humanitarian aid is an important subject to many across the world. It is defined as the assistance provided to those in need using both logistic and material assistance. There are many humanitarian aid organizations such as UNICEF and Doctors Without Boarders")
+
 
