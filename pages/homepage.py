@@ -7,18 +7,21 @@ def app():
     st.title("Finding Hope")
     st.write("Welcome to the Humanitarian Aid Website!")
 
-    st.header("How to Use This App")
-    st.write("This app uses ")
+    st.header("How to Use This Website")
+    st.write("Choose which country you wish to do a deep dive on, and select a keyword for the GDELT Dataset to use in the below dropdown boxes")
  
  # Get the list of countries and keywords
     countries = sorted(country_code.keys())
     keywords = sorted(crisis_cameo_codes.keys())
+    cola, colb = st.columns(2)
 
     # Dropdown for countries
-    country = st.selectbox("Select a Country", countries)
+    with col1:
+        country = st.selectbox("Select a Country", countries)
 
     # Dropdown for keywords
-    keyword = st.selectbox("Select a Keyword", keywords)
+    with col2:
+        keyword = st.selectbox("Select a Keyword", keywords)
 
     # - - - Columns with images - - -
     col1, col2 = st.columns(2)
