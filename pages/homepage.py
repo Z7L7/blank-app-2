@@ -4,7 +4,7 @@ import pandas as pd
 from modules.actors import crisis_cameo_codes, country_code  # Import dictionaries correctly
 
 def app():
-    st.title("Homepage")
+    st.title("Finding Hope")
     st.write("Welcome to the Humanitarian Aid Website!")
 
  # Get the list of countries and keywords
@@ -25,7 +25,7 @@ def app():
 
     with col2:
         st.header("What is Humanitarian Aid?")
-        st.write("Humanitarian aid is an important subject to many across the world. It is defined as the assitance provided to those in need using both logistic and material assistance. There are many humanitarian aid organizations such as UNICEF and Doctors Without Boarders")
+        st.write("Humanitarian aid is an important subject to many across the world. It is defined as the assistance provided to those in need using both logistic and material assistance. There are many humanitarian aid organizations such as UNICEF and Doctors Without Boarders")
 
     # - - - Text - - -
     coli3, coli4 = st.columns(2)
