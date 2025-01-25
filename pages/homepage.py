@@ -16,11 +16,11 @@ def app():
     cola, colb = st.columns(2)
 
     # Dropdown for countries
-    with col1:
+    with cola:
         country = st.selectbox("Select a Country", countries)
 
     # Dropdown for keywords
-    with col2:
+    with colb:
         keyword = st.selectbox("Select a Keyword", keywords)
 
     # - - - Columns with images - - -
