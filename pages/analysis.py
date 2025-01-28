@@ -50,3 +50,4 @@ def app():
             request_url = response["next"]
         else: break
 
+    st.dataframe(df) 
