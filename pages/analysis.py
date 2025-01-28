@@ -27,7 +27,7 @@ def app():
 
     # Pull data from ACAPS API, loop through the pages, and append to a pandas DataFrame
     df = pd.DataFrame()
-    request_url = ("https://api.acaps.org/api/v1/risk-list/?country=%s" %country) # Replace with the URL of the dataset you want to access
+    request_url = ("https://api.acaps.org/api/v1/risk-list/?country=") # Replace with the URL of the dataset you want to access
     last_request_time = datetime.now()
     while True:
 
