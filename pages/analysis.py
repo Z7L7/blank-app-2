@@ -58,3 +58,7 @@ def app():
         X = df.drop(columns="risk_level", axis=1)
         st.dataframe(X)
 
+        st.write("Y Variables")
+        y = df.risk_level
+        st.dataframe(y)
+
