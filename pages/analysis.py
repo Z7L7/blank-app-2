@@ -63,5 +63,5 @@ def app():
         st.dataframe(y)
 
     with st.expander('Data Visualiser'):
-        st.scatter_chart(data=df, x="country", y="risk_level", color="country")
+        st.bar_chart(data=df, x="risk_level", y="risk_type", color="impact")
 
