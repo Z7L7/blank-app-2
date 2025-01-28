@@ -50,4 +50,6 @@ def app():
         else: break
 
     # st.dataframe(df) 
+    with st.expander('Data'):
+        st.write("Raw data")
         df
