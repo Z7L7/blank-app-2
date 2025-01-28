@@ -7,7 +7,6 @@ import numpy as np
 import pickle
 from modules.actors import crisis_cameo_codes, country_code  # Import dictionaries correctly
 
-
 def app():
 
     st.title("GDELT Data Viewer")
@@ -50,4 +49,5 @@ def app():
             request_url = response["next"]
         else: break
 
-    st.dataframe(df) 
+    # st.dataframe(df) 
+        df
