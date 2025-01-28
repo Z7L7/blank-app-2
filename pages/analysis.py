@@ -63,5 +63,5 @@ def app():
         st.dataframe(y)
 
     with st.expander('Data Visualiser'):
-        st.bar_chart(data=df, x="probablity", y="impact", color="risk_level")
+        st.bar_chart(data=df, x="probability", y="impact", color="risk_level")
 
