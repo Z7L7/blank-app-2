@@ -55,6 +55,6 @@ def app():
         st.dataframe(df)
 
         st.write("X Variables")
-        X = df.drop("risk_level")
+        X = df.drop(collumns="risk_level", axis=1)
         st.dataframe(X)
 
