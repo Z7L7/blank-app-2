@@ -63,5 +63,5 @@ def app():
         st.dataframe(y)
 
     with st.expander('Data Visualiser'):
-        st.scatter_chart_chart(data=df, x="probability", y="impact", color="risk_level")
+        st.scatter_chart(data=df, x="probability", y="impact", color="risk_level")
 
