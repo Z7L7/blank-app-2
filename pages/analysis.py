@@ -9,8 +9,15 @@ from modules.actors import crisis_cameo_codes, country_code  # Import dictionari
 
 
 def app():
+
     st.title("GDELT Data Viewer")
     st.write("Welcome to the Humanitarian Aid Website!")
+
+    countries = sorted(country_code.keys())
+    #keywords = sorted(crisis_cameo_codes.keys())
+
+    # Dropdown for countries
+    country = st.selectbox("Select a Country", countries)
 
     credentials = {
         "username": "asiyah.adetunji.workplace@gmail.com", # Replace with your email address
