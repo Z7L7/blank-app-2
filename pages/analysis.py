@@ -52,4 +52,9 @@ def app():
     # st.dataframe(df) 
     with st.expander('Data'):
         st.write("Raw data")
-        df
+        st.dataframe(df)
+
+        st.write("X Variables")
+        X = df.drop("risk_level", axis=19)
+        st.dataframe(X)
+
