@@ -62,6 +62,21 @@ def app():
         y = df.risk_level
         st.dataframe(y)
 
+        rows = {
+
+        }
+
+    # Graphs
     with st.expander('Data Visualiser'):
         st.bar_chart(data=df, x="risk_level", y="risk_type", color="impact")
+
+    # Data preferation
+    with st.sidebar:
+        st.header('Input Features')
+        count = st.selectbox('country', ('Syria','Chad'))
+        geolevel = st.selectbox('geographic_level', ('Regional','Subnational', 'National'))
+
+
+
+    
 
