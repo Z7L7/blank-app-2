@@ -9,8 +9,15 @@ def app():
 
     st.header("How to Use This Website")
     st.write("Choose which country you wish to do a deep dive on, and select a keyword for the GDELT Dataset to use in the below dropdown boxes")
- 
- # Get the list of countries and keywords
+     
+    # Initialize session state variables if they don't exist
+    if 'homepage_country' not in st.session_state:
+        st.session_state.homepage_country = 'Afghanistan'  # Default country
+
+    if 'homepage_keyword' not in st.session_state:
+        st.session_state.homepage_keyword = 'earthquake'  # Default keyword
+
+    # Get the list of countries and keywords
     countries = sorted(country_code.keys())
     keywords = sorted(crisis_cameo_codes.keys())
     cola, colb = st.columns(2)
@@ -22,6 +29,12 @@ def app():
     # Dropdown for keywords
     with colb:
         keyword = st.selectbox("Select a Keyword", keywords)
+
+    # Update session state if selections change
+    if country != st.session_state.homepage_country or keyword != st.session_state.homepage_keyword:
+        st.session_state.homepage_country = country
+        st.session_state.homepage_keyword = keyword
+
 
     # - - - Columns with images - - -
     col1, col2 = st.columns(2)
