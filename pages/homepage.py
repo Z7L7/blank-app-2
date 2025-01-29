@@ -11,29 +11,35 @@ def app():
     st.write("Choose which country you wish to do a deep dive on, and select a keyword for the GDELT Dataset to use in the below dropdown boxes")
      
     # Initialize session state variables if they don't exist
-    if 'homepage_country' not in st.session_state:
-        st.session_state.homepage_country = 'Afghanistan'  # Default country
-
     if 'homepage_keyword' not in st.session_state:
         st.session_state.homepage_keyword = 'earthquake'  # Default keyword
+
+    if 'homepage_country' not in st.session_state:
+        st.session_state.homepage_country = 'Brazil'  # Default country
 
     # Get the list of countries and keywords
     countries = sorted(country_code.keys())
     keywords = sorted(crisis_cameo_codes.keys())
     cola, colb = st.columns(2)
 
+   # Initialize session state for country and keyword if they don't exist
+    if 'country' not in st.session_state:
+        st.session_state['country'] = countries[0]  # Default to the first country
+
+    if 'keyword' not in st.session_state:
+        st.session_state['keyword'] = keywords[0]  # Default to the first keyword
+
     # Dropdown for countries
     with cola:
-        country = st.selectbox("Select a Country", countries)
+        country = st.selectbox("Select a Country", countries, index=countries.index(st.session_state['country']))
 
     # Dropdown for keywords
     with colb:
-        keyword = st.selectbox("Select a Keyword", keywords)
+        keyword = st.selectbox("Select a Keyword", keywords, index=keywords.index(st.session_state['keyword']))
 
-    # Update session state if selections change
-    if country != st.session_state.homepage_country or keyword != st.session_state.homepage_keyword:
-        st.session_state.homepage_country = country
-        st.session_state.homepage_keyword = keyword
+    # Update session state with the new selections
+    st.session_state['country'] = country
+    st.session_state['keyword'] = keyword
 
 
     # - - - Columns with images - - -

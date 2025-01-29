@@ -1,102 +1,78 @@
-import pandas as pd
+# pages/news.py
+
+import streamlit as st
 import requests
 from datetime import datetime
-import time
-import streamlit as st
-import numpy as np
-import pickle
-from modules.actors import crisis_cameo_codes, country_code  # Import dictionaries correctly
 
+@st.cache_data(ttl=600)  # Cache data for 10 minutes
+def fetch_reliefweb_data(limit):
+    """
+    Fetch reports from the ReliefWeb API.
+
+    Args:
+        limit (int): Number of reports to fetch.
+
+    Returns:
+        dict or None: JSON response from the API or None if the request fails.
+    """
+    url = "https://api.reliefweb.int/v1/reports"
+    params = {
+        "appname": "apidoc",       # Replace with your actual app name if different
+        "limit": limit,
+        "profile": "full",
+        "sort[]": "date:desc"
+    }
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()  # Raises HTTPError for bad responses
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        st.error(f"Failed to fetch data from ReliefWeb API: {e}")
+        return None
 
 def app():
-    st.title("News")
-    st.write("Welcome to the Humanitarian Aid Website!")
+    """
+    Render the ReliefWeb Reports page.
+    """
+    st.title("ReliefWeb Reports")
+    st.write("Stay updated with the latest humanitarian reports from ReliefWeb.")
 
-    #  # Get the list of countries and keywords
-    # countries = sorted(country_code.keys())
-    # keywords = sorted(crisis_cameo_codes.keys())
+    # Add a slider for the user to select the number of reports
+    num_reports = st.slider(
+        "Select number of reports to fetch",
+        min_value=1,
+        max_value=50,
+        value=10,
+        step=1
+    )
 
-    # # Dropdown for countries
-    # # country = st.selectbox("Select a Country", countries)
+    # Button to fetch data
+    if st.button("Fetch Reports"):
+        with st.spinner("Fetching reports..."):
+            data = fetch_reliefweb_data(num_reports)
 
-    # # Dropdown for keywords
-    # # keyword = st.selectbox("Select a Keyword", keywords)
-    # st.title("Acaps")
-    # st.write("Welcome to the Humanitarian Aid Website!")
+        if data:
+            reports = data.get("data", [])
+            st.success(f"Number of reports fetched: {len(reports)}")
 
-    # # country = st.text_input("", "afghanistan")
-    # # st.write("The current country shown is:", country)
-    # # et the list of countries and keywords
-    # countries = sorted(country_code.keys())
-    # # keywords = sorted(crisis_cameo_codes.keys())
+            for report in reports:
+                fields = report.get("fields", {})
+                title = fields.get("title", "No Title")
+                date_info = fields.get("date", {})
+                date_str = date_info.get("created", "No Date")
 
-    # # Dropdown for countries
-    # country = st.selectbox("Select a Country", countries)
+                # Parse and format the date
+                try:
+                    date = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%S%z")
+                    formatted_date = date.strftime("%B %d, %Y %H:%M:%S %Z")
+                except (ValueError, TypeError):
+                    formatted_date = "No Date"
 
-    # # Dropdown for keywords
-    # keyword = st.selectbox("Select a Keyword", keywords)
+                summary = fields.get("body-html", "No Summary Available")
 
-    # # Post credentials to get an authentication token
-    # credentials = {
-    #     "username": "asiyah.adetunji.workplace@gmail.com", # Replace with your email address
-    #     "password": "sPAcA317&2" # Replace with your password
-    # }
-    # auth_token_response = requests.post("https://api.acaps.org/api/v1/token-auth/", credentials)
-    # auth_token = auth_token_response.json()['token']
-
-    # # Pull data from ACAPS API, loop through the pages, and append to a pandas DataFrame
-    # df = pd.DataFrame()
-    # request_url = ("https://api.acaps.org/api/v1/yemen-monitoring/") # Replace with the URL of the dataset you want to access
-    # last_request_time = datetime.now()
-    # while True:
-
-        # # Wait to avoid throttling
-        # while (datetime.now()-last_request_time).total_seconds() < 1:
-        #     time.sleep(0.1)
-
-        # # Make the request
-        # response = requests.get(request_url, headers={"Authorization": "Token %s" % auth_token})
-        # last_request_time = datetime.now()
-        # response = response.json()
-        # print(response)
-
-        # # Append to a pandas DataFrame
-        # df = df._append(pd.DataFrame(response["results"]))
-
-        # Loop to the next page; if we are on the last page, break the loop
-        # if ("next" in response.keys()) and (response["next"] != None):
-        #     request_url = response["next"]
-        # else: break
-
-
-        # st.dataframe(df) 
-    # with st.expander('Data'):
-    #     st.write("Raw data")
-    #     st.dataframe(df)
-
-    #     st.write("X Variables")
-    #     X = df.drop(columns="risk_level", axis=1)
-    #     st.dataframe(X)
-
-    #     st.write("Y Variables")
-    #     y = df.risk_level
-    #     st.dataframe(y)
-
-    #     rows = {
-
-    #     }
-
-    # # Graphs
-    # with st.expander('Data Visualiser'):
-    #     st.bar_chart(data=df, x="risk_level", y="risk_type", color="impact")
-
-    # # Data preferation
-    # with st.sidebar:
-    #     st.header('Input Features')
-    #     count = st.selectbox('country')
-
-
-    # # - - - Front End - - -
-    # st.header("Data")
-    # st.dataframe(df) 
-
+                st.subheader(title)
+                st.write(f"**Date:** {formatted_date}")
+                st.markdown(summary, unsafe_allow_html=True)
+                st.markdown("---")
+    else:
+        st.info("Use the slider and button above to fetch the latest reports.")

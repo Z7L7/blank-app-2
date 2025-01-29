@@ -4,3 +4,5 @@ datetime
 numpy
 gdelt
 scikit-learn
+wordcloud
+matplotlib.pyplot

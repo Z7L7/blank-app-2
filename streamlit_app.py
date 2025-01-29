@@ -3,7 +3,7 @@ import streamlit as st
 def main():
     # Sidebar for Navigation
     st.sidebar.title("Navigation")
-    page = st.sidebar.radio("Go to", ["Homepage", "Acaps", "GDELT", "News", "Analysis"])
+    page = st.sidebar.radio("Go to", ["Homepage", "Acaps", "GDELT", "Relief Web", "Analysis", "Fewsnet"])
 
     # Navigation logic
     if page == "Homepage":
@@ -18,13 +18,20 @@ def main():
         from pages import gdelt
         gdelt.app()
     
-    elif page == "News":
+    elif page == "Relief Web":
         from pages import news
         news.app()
+
+    elif page == "Fewsnet":
+        from pages import fewsnet
+        fewsnet.app()
 
     elif page == "Analysis":
         from pages import analysis
         analysis.app()
+
+
+
 
     # Footer
     st.sidebar.text("Humanitarian Aid Website By:\nAsiyah Adetunji")
