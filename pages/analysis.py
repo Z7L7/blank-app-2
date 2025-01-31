@@ -62,6 +62,9 @@ def app():
             request_url = response["next"]
         else: break
 
+    
+
+
     # Time-series chart
     # st.subheader("Time-Series of Articles")
     # time_series_chart(df, 'date', 'article_count')

@@ -6,3 +6,4 @@ gdelt
 scikit-learn
 wordcloud
 matplotlib
+openai

@@ -7,6 +7,8 @@ import numpy as np
 import pickle
 from modules.actors import crisis_cameo_codes, country_code  # Import dictionaries correctly
 from modules.charts import time_series_chart, bar_chart, word_cloud_image
+from modules.agent import run_expert_agent
+import json
 
 def app():
     st.title("Acaps")
@@ -25,6 +27,9 @@ def app():
 
     if 'acaps_data' not in st.session_state:
         st.session_state['acaps_data'] = None  # Initialize ACAPS data as None
+
+    if 'acaps_expert_result' not in st.session_state:
+        st.session_state['acaps_expert_result'] = None  # Initialize LLM Expert as None
 
     # Dropdown for countries
     country = st.selectbox("Select a Country", countries, index=countries.index(st.session_state['country']))
@@ -107,6 +112,30 @@ def app():
                 subset = df[df['risk_type'] == source]
                 combined_text = " ".join(subset['rationale'].tolist())
                 word_cloud_image(combined_text, max_width=400, max_height=300)
+
+    st.header("LLM Agent Analysis")
+
+    # If we have all required data, show the "Generate Expert Context and Prediction" button
+    if ('acaps_data' in st.session_state and country and keywords):
+
+        acaps_data_json = st.session_state['acaps_data'].to_json(orient='records')
+        # serper_query = f"{country} {keywords} crisis after:{start_date.strftime('%Y-%m-%d')} before:{end_date.strftime('%Y-%m-%d')}"
+
+        if st.button("Generate Expert Context and Prediction"):
+            with st.spinner("Generating context and prediction..."):
+                result = run_expert_agent(
+                    acaps_data_json,
+                    # serper_query,
+                    # start_date.strftime("%Y-%m-%d"),  # Convert start_date to string format
+                    # end_date.strftime("%Y-%m-%d")     # Convert end_date to string format
+                )
+                st.session_state['acaps_expert_result'] = result
+
+                # Ensure result is a string
+                if isinstance(result, dict):
+                    result = json.dumps(result)
+
+
 
 
 
