@@ -6,6 +6,7 @@ import streamlit as st
 import numpy as np
 import pickle
 from modules.actors import crisis_cameo_codes, country_code  # Import dictionaries correctly
+from modules.charts import time_series_chart, bar_chart, word_cloud_image
 
 def app():
     st.title("Acaps")
@@ -85,3 +86,30 @@ def app():
     df2 = df[df['rationale'] != '[-]']
     container.header("Rationale")
     container.write(df2.to_string(columns=['rationale'], header=True, index=True))
+
+    st.header("Analysis")
+
+     # Bar chart
+    st.subheader("Sources Comparison")
+    bar_chart(df, 'country', 'intensity')
+
+    # Word cloud by source (side by side)
+    st.subheader("Word Clouds by Source")
+    sources = df['risk_type'].unique()
+
+    # Display two word clouds per row
+    for i in range(0, len(sources), 2):
+        row_sources = sources[i:i+2]
+        columns = st.columns(len(row_sources))
+        for idx, source in enumerate(row_sources):
+            with columns[idx]:
+                st.write(f"**{source}**")
+                subset = df[df['risk_type'] == source]
+                combined_text = " ".join(subset['rationale'].tolist())
+                word_cloud_image(combined_text, max_width=400, max_height=300)
+
+
+
+
+
+    
