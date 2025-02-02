@@ -1,5 +1,7 @@
 # google_search.py
-
+# Ensure necessary NLTK resources are downloaded
+import nltk
+nltk.download('vader_lexicon')
 import pandas as pd
 import requests
 import streamlit as st
@@ -7,12 +9,7 @@ import json
 from modules.charts import bar_chart, word_cloud_image
 from modules.agent import run_expert_agent
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-import nltk
-nltk.download('vader_lexicon')
 import matplotlib.pyplot as plt
-
-# Ensure necessary NLTK resources are downloaded
-nltk.download('vader_lexicon')
 
 def app():
     st.title("Google Search Analysis")
