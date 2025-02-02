@@ -3,13 +3,14 @@ from modules.actors import gdelt_wrapper
 import pandas as pd
 from modules.actors import crisis_cameo_codes, country_code  # Import dictionaries correctly
 
+
 def app():
     st.title("Finding Hope")
     st.write("Welcome to the Humanitarian Aid Website!")
 
     st.header("How to Use This Website")
     st.write("Choose which country you wish to do a deep dive on, and select a keyword for the GDELT Dataset to use in the below dropdown boxes")
-     
+
     # Initialize session state variables if they don't exist
     if 'homepage_keyword' not in st.session_state:
         st.session_state.homepage_keyword = 'earthquake'  # Default keyword

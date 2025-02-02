@@ -1,9 +1,11 @@
 import streamlit as st
 
+
+
 def main():
     # Sidebar for Navigation
     st.sidebar.title("Navigation")
-    page = st.sidebar.radio("Go to", ["Homepage", "Acaps", "GDELT", "Relief Web", "Analysis", "Fewsnet", "Google"])
+    page = st.sidebar.radio("Go to", ["Homepage", "Acaps", "GDELT", "Relief Web", "Analysis", "Fewsnet", "Google", "Chatbot"])
 
     # Navigation logic
     if page == "Homepage":
@@ -33,6 +35,10 @@ def main():
     elif page == "Analysis":
         from pages import analysis
         analysis.app()
+
+    elif page == "Chatbot":
+        from pages import chatbot
+        chatbot.app()
 
 
 

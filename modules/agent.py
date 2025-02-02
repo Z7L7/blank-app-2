@@ -76,14 +76,14 @@ def run_expert_agent(
     # twitter_data_json: str,
     # google_trends_data_json: str,
     # gdelt_data_json: str,
-    acaps_data_json: str,
-    serper_query: str = None,
+    acaps_data_json: str = None,
+    serper_data_json: str = None,
     start_date: str = None,
     end_date: str = None
 ):
-    serper_context = ""
-    if serper_query and start_date and end_date:
-        serper_context = fetch_serper_context(serper_query, start_date, end_date)
+    # serper_context = ""
+    # if serper_data_json and start_date and end_date:
+    #     serper_context = fetch_serper_context(serper_data_json, start_date, end_date)
 
     openai.api_key = st.secrets["OPENAI_API_KEY"]
 
@@ -112,30 +112,34 @@ def run_expert_agent(
     # GDELT Data: {gdelt_data_json}
     # """
 
-    # Expert 4: Serper Search Analyst
-    # serper_prompt = f"""
-    # You are a Serper search analyst. Analyze the following Serper search context. Include links to the supporting sources for your analysis.
+    #Expert 4: Serper Search Analyst
+    if serper_data_json is not None:
+        serper_prompt = f"""
+        You are a Serper search analyst. Analyze the following Serper search context. Include links to the supporting sources for your analysis.
 
-    # Serper Search Context: {serper_context}
-    # """
+        # Serper Search Context: {serper_data_json}
+        # """
 
     # Expert 5: ACAPS Risk List Data Analyst
-    acaps_prompt = f"""
-    You are an ACAPS Risk List data analyst. Analyze the following historical data from the ACAPS Risk List context and provide your opinion based on whether similar events have materialized in the past. Include references to the historical data.
+    if acaps_data_json is not None:
+        acaps_prompt = f"""
+        You are an ACAPS Risk List data analyst. Analyze the following historical data from the ACAPS Risk List context and provide your opinion based on whether similar events have materialized in the past. Include references to the historical data.
 
-    ACAPS Data: {acaps_data_json}
-    """
+        ACAPS Data: {acaps_data_json}
+        """
 
     expert_responses = {}
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        future_to_expert = {
+        future_to_expert = {}
             # executor.submit(get_expert_response, twitter_prompt, "You are a Twitter analyst expert. Include Tweet links as sources in your response."): "Expert (Twitter)",
             # executor.submit(get_expert_response, google_trends_prompt, "You are a Google Trends analyst. Include links to the supporting sources for your analysis."): "Expert (Google Trends)",
             # executor.submit(get_expert_response, gdelt_prompt, "You are a GDELT analyst. Include links to the supporting sources for your analysis."): "Expert (GDELT)",
-            # executor.submit(get_expert_response, serper_prompt, "You are a Serper search analyst. Include links to the supporting sources for your analysis."): "Expert (Serper)",
-            executor.submit(get_expert_response, acaps_prompt, "You are an ACAPS Risk List data analyst. Include references to the historical data in your response."): "Expert (ACAPS Historical Data)"
-        }
+        if serper_data_json is not None:
+            future_to_expert[executor.submit(get_expert_response, serper_prompt, "You are a Serper search analyst. Include links to the supporting sources in your response.")] = "Expert (Serper)"
+
+        if acaps_data_json is not None:
+            future_to_expert[executor.submit(get_expert_response, acaps_prompt, "You are an ACAPS Risk List data analyst. Include references to the historical data in your response.")] = "Expert (ACAPS Historical Data)"
 
         for future in concurrent.futures.as_completed(future_to_expert):
             expert = future_to_expert[future]
@@ -146,6 +150,12 @@ def run_expert_agent(
                 st.markdown(response.replace("http", "<span style='color: blue;'>http"), unsafe_allow_html=True)
             except Exception as exc:
                 st.error(f"{expert} generated an exception: {exc}")
+
+    # Proceed only if there are valid expert responses
+    if not expert_responses:
+        st.warning("No expert responses available. Unable to proceed with the final judgment.")
+        return {"expert_responses": {}, "judge_content": ""}
+
 
     # Final Judge: Make a prediction using ACAPS Risk List format
     judge_prompt = f"""

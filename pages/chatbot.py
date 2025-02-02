@@ -1,17 +1,13 @@
-# import streamlit as st
-# import random
-# import pandas as pd
-# import numpy as np
-# def app():
-#     st.title("Chart")
-#     st.write("Welcome to the Humanitarian Aid Website!")
-# st.header("Yemen")
+import streamlit as st
+import random
+import pandas as pd
+import numpy as np
+import pandas as pd                        
+from pytrends.request import TrendReq
 
-# tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
-# data = np.random.randn(10, 1)
-
-# tab1.subheader("A tab with a chart")
-# tab1.line_chart(data)
-
-# tab2.subheader("A tab with the data")
-# tab2.write(data)
+def app():
+    pytrend = TrendReq()
+    pytrend.build_payload(kw_list=['War'])
+    df = pytrend.interest_by_region()
+    # Interest by Region
+    st.dataframe(df)

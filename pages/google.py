@@ -1,141 +1,218 @@
+# google_search.py
+
 import pandas as pd
 import requests
-from datetime import datetime
-import time
 import streamlit as st
-import numpy as np
-import pickle
-from modules.actors import crisis_cameo_codes, country_code  # Import dictionaries correctly
-from modules.charts import time_series_chart, bar_chart, word_cloud_image
-from modules.agent import run_expert_agent
 import json
+from modules.charts import bar_chart, word_cloud_image
+from modules.agent import run_expert_agent
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+import nltk
+nltk.download('vader_lexicon')
+import matplotlib.pyplot as plt
+
+# Ensure necessary NLTK resources are downloaded
+nltk.download('vader_lexicon')
 
 def app():
-    st.title("Google")
-    st.write("Welcome to the Humanitarian Aid Website!")
+    st.title("Google Search Analysis")
+    st.write("Welcome to the Google Search Data Analysis Page!")
 
-    # Get the list of countries and keywords
-    countries = sorted(country_code.keys())
-    keywords = sorted(crisis_cameo_codes.keys())
+    # Initialize session state
+    if 'query' not in st.session_state:
+        st.session_state['query'] = ""
+    if 'serper_data' not in st.session_state:
+        st.session_state['serper_data'] = None
+    if 'expert_result' not in st.session_state:
+        st.session_state['expert_result'] = None
+    if 'sentiment_data' not in st.session_state:
+        st.session_state['sentiment_data'] = None
 
-    # Use session state to persist country, keyword, and fetched data
-    if 'country' not in st.session_state:
-        st.session_state['country'] = countries[0]  # Default to the first country
+    # User Input: Search Query
+    st.header("Search Query")
+    query = st.text_input("Enter your search query:", value=st.session_state['query'])
 
-    if 'keyword' not in st.session_state:
-        st.session_state['keyword'] = keywords[0]  # Default to the first keyword
+    if st.button("Fetch Google Search Results"):
+        if query.strip() == "":
+            st.error("Please enter a valid search query.")
+        else:
+            with st.spinner("Fetching search results..."):
+                results = fetch_serper_results(query)
+                if results:
+                    # Convert results to DataFrame
+                    serper_df = parse_serper_results(results)
+                    st.session_state['serper_data'] = serper_df
+                    st.session_state['query'] = query
 
-    if 'google_data' not in st.session_state:
-        st.session_state['google_data'] = None  # Initialize GOOGLE data as None
+                    # Perform Sentiment Analysis on Snippets
+                    sentiments = perform_sentiment_analysis(serper_df)
+                    st.session_state['sentiment_data'] = sentiments
 
-    if 'google_expert_result' not in st.session_state:
-        st.session_state['google_expert_result'] = None  # Initialize LLM Expert as None
+                    # Generate Word Cloud
+                    combined_text = " ".join(serper_df['snippet'].dropna().tolist())
+                    st.session_state['word_cloud'] = combined_text
 
-    # Dropdown for countries
-    country = st.selectbox("Select a Country", countries, index=countries.index(st.session_state['country']))
+    # Display SERPER Data with Sentiment
+    if st.session_state['serper_data'] is not None and st.session_state['sentiment_data'] is not None:
+        st.header("Google Search Results Data with Sentiment")
+        combined_df = pd.concat([st.session_state['serper_data'], st.session_state['sentiment_data']], axis=1)
+        combined_df['Sentiment'] = combined_df['compound'].apply(categorize_sentiment)
+        combined_df['Sentiment Indicator'] = combined_df['Sentiment'].apply(get_sentiment_indicator)
+        # Reorder columns to move 'Sentiment Indicator' to the front
+        combined_df = combined_df[['Sentiment Indicator', 'Sentiment', 'title', 'link', 'snippet']]
+        # Rename columns for clarity
+        combined_df.rename(columns={
+            'snippet': 'Snippet',
+            'title': 'Title',
+            'link': 'Link'
+        }, inplace=True)
+        st.dataframe(combined_df)
 
-    # Dropdown for keywords (if needed)
-    # keyword = st.selectbox("Select a Keyword", keywords, index=keywords.index(st.session_state['keyword']))
+    # Display Word Cloud
+    if st.session_state.get('word_cloud'):
+        st.header("Word Cloud of Article Snippets")
+        word_cloud_image(st.session_state['word_cloud'])
 
-    # Update session state with the new selections
-    st.session_state['country'] = country
-    # st.session_state['keyword'] = keyword  # Uncomment if you want to use the keyword
+    acaps_data_json = None
 
-    # Fetch GOOGLE data only if the country changes or data is not already fetched
-    if st.session_state['google_data'] is None or st.session_state['country'] != country:
-        # Post credentials to get an authentication token
-        
-        auth_token_response = requests.post("https://api.google.org/api/v1/token-auth/")
-        auth_token = auth_token_response.json()['token']
-
-        # Pull data from GOOGLE API, loop through the pages, and append to a pandas DataFrame
-        df = pd.DataFrame()
-        request_url = ("https://api.google.org/api/v1/risk-list/?country=%s" % st.session_state['country'])  # Use session state for country
-        last_request_time = datetime.now()
-        while True:
-            # Wait to avoid throttling
-            while (datetime.now() - last_request_time).total_seconds() < 1:
-                time.sleep(0.1)
-
-            # Make the request
-            response = requests.get(request_url, headers={"Authorization": "Token %s" % auth_token})
-            last_request_time = datetime.now()
-            response = response.json()
-            print(response)
-
-            # Append to a pandas DataFrame
-            df = df._append(pd.DataFrame(response["results"]))
-
-            # Loop to the next page; if we are on the last page, break the loop
-            if ("next" in response.keys()) and (response["next"] is not None):
-                request_url = response["next"]
-            else:
-                break
-
-        # Store the fetched data in session state
-        st.session_state['google_data'] = df
-
-    # Use the fetched data from session state
-    df = st.session_state['google_data']
-
-    # - - - Front End - - -
-    st.header("Data")
-    st.dataframe(df)
-    url = "https://www.google.org/en/"
-    st.write("This is the Risk List dataset from [GOOGLE.org](%s) a nonprofit, nongovernmental website." % url)
-
-    container = st.container(border=True)
-    df2 = df[df['rationale'] != '[-]']
-    container.header("Rationale")
-    container.write(df2.to_string(columns=['rationale'], header=True, index=True))
-
-    st.header("Analysis")
-
-     # Bar chart
-    st.subheader("Sources Comparison")
-    bar_chart(df, 'country', 'intensity')
-
-    # Word cloud by source (side by side)
-    st.subheader("Word Clouds by Source")
-    sources = df['risk_type'].unique()
-
-    # Display two word clouds per row
-    for i in range(0, len(sources), 2):
-        row_sources = sources[i:i+2]
-        columns = st.columns(len(row_sources))
-        for idx, source in enumerate(row_sources):
-            with columns[idx]:
-                st.write(f"**{source}**")
-                subset = df[df['risk_type'] == source]
-                combined_text = " ".join(subset['rationale'].tolist())
-                word_cloud_image(combined_text, max_width=400, max_height=300)
-
-    st.header("LLM Agent Analysis")
-
-    # If we have all required data, show the "Generate Expert Context and Prediction" button
-    if ('google_data' in st.session_state and country and keywords):
-
-        google_data_json = st.session_state['google_data'].to_json(orient='records')
-        # serper_query = f"{country} {keywords} crisis after:{start_date.strftime('%Y-%m-%d')} before:{end_date.strftime('%Y-%m-%d')}"
-
+    # LLM Agent Analysis
+    if st.session_state['serper_data'] is not None:
+        st.header("LLM Agent Analysis")
         if st.button("Generate Expert Context and Prediction"):
             with st.spinner("Generating context and prediction..."):
+                serper_data_json = st.session_state['serper_data'].to_json(orient='records')
                 result = run_expert_agent(
-                    google_data_json,
-                    # serper_query,
-                    # start_date.strftime("%Y-%m-%d"),  # Convert start_date to string format
-                    # end_date.strftime("%Y-%m-%d")     # Convert end_date to string format
+                    acaps_data_json=None,
+                    serper_data_json=serper_data_json,
+                    start_date=None,  # Optional: Modify if you have date filters
+                    end_date=None
                 )
-                st.session_state['google_expert_result'] = result
-
-                # Ensure result is a string
-                if isinstance(result, dict):
-                    result = json.dumps(result)
+                st.session_state['expert_result'] = result
 
 
+def fetch_serper_results(query, num_results=10):
+    """
+    Fetches Google search results using the SERPER API.
 
+    Args:
+        query (str): The search query.
+        num_results (int): Number of search results to retrieve.
 
+    Returns:
+        dict: JSON response from SERPER API containing search results.
+    """
+    serper_api_key = st.secrets["SERPER_API_KEY"]
+    headers = {
+        "X-API-KEY": serper_api_key,
+        "Content-Type": "application/json"
+    }
+    payload = {
+        "q": query,
+        "num": num_results
+    }
+    response = requests.post("https://google.serper.dev/search", headers=headers, json=payload)
 
+    if response.status_code == 200:
+        return response.json()
+    else:
+        st.error(f"Error fetching SERPER results: {response.status_code} - {response.text}")
+        return None
 
+def parse_serper_results(results):
+    """
+    Parses SERPER API results into a pandas DataFrame.
 
-    
+    Args:
+        results (dict): JSON response from SERPER API.
+
+    Returns:
+        pd.DataFrame: DataFrame containing search results.
+    """
+    if "organic" not in results:
+        st.error("No organic results found.")
+        return pd.DataFrame()
+
+    data = []
+    for item in results["organic"]:
+        data.append({
+            "title": item.get("title"),
+            "link": item.get("link"),
+            "snippet": item.get("snippet", "")
+        })
+    df = pd.DataFrame(data)
+    return df
+
+def perform_sentiment_analysis(df):
+    """
+    Performs sentiment analysis on the article snippets.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing search results.
+
+    Returns:
+        pd.DataFrame: DataFrame with sentiment scores.
+    """
+    sia = SentimentIntensityAnalyzer()
+    sentiments = df['snippet'].apply(lambda x: sia.polarity_scores(x) if isinstance(x, str) else {})
+    sentiment_df = pd.json_normalize(sentiments)
+    return sentiment_df
+
+def categorize_sentiment(compound_score):
+    """
+    Categorizes sentiment based on compound score.
+
+    Args:
+        compound_score (float): Compound sentiment score.
+
+    Returns:
+        str: Sentiment category ('Negative', 'Neutral', 'Positive').
+    """
+    if compound_score >= 0.05:
+        return 'Positive'
+    elif compound_score <= -0.05:
+        return 'Negative'
+    else:
+        return 'Neutral'
+
+def get_sentiment_indicator(sentiment):
+    """
+    Returns a traffic light emoji based on sentiment.
+
+    Args:
+        sentiment (str): Sentiment category.
+
+    Returns:
+        str: Emoji representing the sentiment.
+    """
+    if sentiment == 'Positive':
+        return '🟢'
+    elif sentiment == 'Negative':
+        return '🔴'
+    else:
+        return '🟡'
+
+def display_sentiment_analysis(sentiment_df):
+    """
+    Displays sentiment analysis results.
+
+    Args:
+        sentiment_df (pd.DataFrame): DataFrame containing sentiment scores.
+    """
+    if sentiment_df.empty:
+        st.write("No sentiment data to display.")
+        return
+
+    st.subheader("Sentiment Scores")
+    st.dataframe(sentiment_df)
+
+    # Plotting Sentiment Distribution
+    st.subheader("Sentiment Distribution")
+    fig, ax = plt.subplots()
+    sentiment_df[['neg', 'neu', 'pos']].plot(kind='hist', alpha=0.5, ax=ax, bins=20)
+    plt.xlabel("Sentiment Score")
+    plt.ylabel("Frequency")
+    plt.title("Sentiment Distribution of Article Snippets")
+    st.pyplot(fig)
+
+if __name__ == "__main__":
+    app()

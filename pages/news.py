@@ -3,9 +3,16 @@
 import streamlit as st
 import requests
 from datetime import datetime
+from modules.actors import crisis_cameo_codes, country_code  # Import dictionaries correctly
+from modules.charts import time_series_chart, bar_chart, word_cloud_image
+
+
 
 @st.cache_data(ttl=600)  # Cache data for 10 minutes
-def fetch_reliefweb_data(limit):
+
+
+def fetch_reliefweb_data(limit, country):
+    
     """
     Fetch reports from the ReliefWeb API.
 
@@ -15,10 +22,10 @@ def fetch_reliefweb_data(limit):
     Returns:
         dict or None: JSON response from the API or None if the request fails.
     """
-    url = "https://api.reliefweb.int/v1/reports"
+    url = ("https://api.reliefweb.int/v1/reports?appname=REPLACE-WITH-A-DOMAIN-OR-APP-NAME&filter[field]=country&filter[value][]=%s&filter[value]"%country)
     params = {
         "appname": "apidoc",       # Replace with your actual app name if different
-        "limit": limit,
+        "limit": limit, 
         "profile": "full",
         "sort[]": "date:desc"
     }
@@ -37,6 +44,7 @@ def app():
     st.title("ReliefWeb Reports")
     st.write("Stay updated with the latest humanitarian reports from ReliefWeb.")
 
+
     # Add a slider for the user to select the number of reports
     num_reports = st.slider(
         "Select number of reports to fetch",
@@ -46,10 +54,35 @@ def app():
         step=1
     )
 
+    countries = sorted(country_code.keys())
+    keywords = sorted(crisis_cameo_codes.keys())
+
+    # Use session state to persist country, keyword, and fetched data
+    if 'country' not in st.session_state:
+        st.session_state['country'] = countries[0]  # Default to the first country
+
+    if 'keyword' not in st.session_state:
+        st.session_state['keyword'] = keywords[0]  # Default to the first keyword
+
+    if 'gdelt_data' not in st.session_state:
+        st.session_state['gdelt_data'] = None  # Initialize GDELT data as None
+
+    # Dropdown for countries
+    country = st.selectbox("Select a Country", countries, index=countries.index(st.session_state['country']))
+
+    # Dropdown for keywords
+    keyword = st.selectbox("Select a Keyword", keywords, index=keywords.index(st.session_state['keyword']))
+
+    # Update session state with the new selections
+    st.session_state['country'] = country
+    st.session_state['keyword'] = keyword
+
+    
+
     # Button to fetch data
     if st.button("Fetch Reports"):
         with st.spinner("Fetching reports..."):
-            data = fetch_reliefweb_data(num_reports)
+            data = fetch_reliefweb_data(num_reports, country)
 
         if data:
             reports = data.get("data", [])

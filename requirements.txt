@@ -7,3 +7,5 @@ scikit-learn
 wordcloud
 matplotlib
 openai
+pytrends
+nltk
