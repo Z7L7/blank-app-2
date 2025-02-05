@@ -1,4 +1,4 @@
-#modules/agents.py
+#modules/agent.py
 
 
 import json
@@ -81,6 +81,7 @@ def run_expert_agent(
     start_date: str = None,
     end_date: str = None
 ):
+
     # serper_context = ""
     # if serper_data_json and start_date and end_date:
     #     serper_context = fetch_serper_context(serper_data_json, start_date, end_date)
@@ -129,6 +130,7 @@ def run_expert_agent(
         """
 
     expert_responses = {}
+    rendered_markdown = []
 
     with concurrent.futures.ThreadPoolExecutor() as executor:
         future_to_expert = {}
@@ -146,10 +148,24 @@ def run_expert_agent(
             try:
                 response = future.result()
                 expert_responses[expert] = response
-                st.markdown(f"<h2 style='color: blue; text-decoration: underline;'>{expert}</h2>", unsafe_allow_html=True)
-                st.markdown(response.replace("http", "<span style='color: blue;'>http"), unsafe_allow_html=True)
+
+                # Capture and store the header
+                header_html = f"<h2 style='color: blue; text-decoration: underline;'>{expert}</h2>"
+                rendered_markdown.append(header_html)
+
+                # Display the header
+                st.markdown(header_html, unsafe_allow_html=True)
+
+                # Process response content for markdown and storage
+                formatted_response = response.replace("http", "<span style='color: blue;'>http")
+                rendered_markdown.append(formatted_response)
+
+                # Display the formatted response
+                st.markdown(formatted_response, unsafe_allow_html=True)
             except Exception as exc:
-                st.error(f"{expert} generated an exception: {exc}")
+                error_msg = f"{expert} generated an exception: {exc}"
+                st.error(error_msg)
+                rendered_markdown.append(f"<span style='color: red;'>{error_msg}</span>")
 
     # Proceed only if there are valid expert responses
     if not expert_responses:
@@ -184,12 +200,23 @@ def run_expert_agent(
     )
     judge_content = judge_response.choices[0].message.content
 
-    # Display the judge's response only once
-    st.markdown("<h2 style='color: blue; text-decoration: underline;'>Judge (Final Opinion)</h2>", unsafe_allow_html=True)
-    st.markdown(judge_content.replace("http", "<span style='color: blue;'>http"), unsafe_allow_html=True)
+    # Capture and store the judge's header
+    judge_header_html = "<h2 style='color: blue; text-decoration: underline;'>Judge (Final Opinion)</h2>"
+    rendered_markdown.append(judge_header_html)
+
+    # Display the judge's header
+    st.markdown(judge_header_html, unsafe_allow_html=True)
+
+    # Process and store the formatted content
+    formatted_judge_content = judge_content.replace("http", "<span style='color: blue;'>http")
+    rendered_markdown.append(formatted_judge_content)
+
+    # Display the judge's content
+    st.markdown(formatted_judge_content, unsafe_allow_html=True)
 
     return {
         "expert_responses": expert_responses,
-        "judge_content": judge_content
+        "judge_content": judge_content,
+        "rendered_markdown": rendered_markdown  # This now includes all formatted HTML content
     }
 
