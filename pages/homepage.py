@@ -65,10 +65,10 @@ def app():
     coli5, coli6 = st.columns(2)
     with coli5:
         st.header("Why Does Humanitarian Aid Matter?")
-        st.write("Humanitarian aid is an important subject to many across the world. It is defined as the assistance provided to those in need using both logistic and material assistance. There are many humanitarian aid organizations such as UNICEF and Doctors Without Boarders")
+        st.write("Humanitarian aid is crucial because it addresses the immediate needs of people affected by crises, such as natural disasters, conflicts, and health emergencies, ensuring their survival and well-being. \n It provides essential services like food, shelter, healthcare, and education, which are often disrupted in these situations.")
 
     with coli6:
         st.header("How to Contribute to Humanitarian Aid")
-        st.write("Humanitarian aid is an important subject to many across the world. It is defined as the assistance provided to those in need using both logistic and material assistance. There are many humanitarian aid organizations such as UNICEF and Doctors Without Boarders")
+        st.write("Donating money, volunteering, and raising awareness are three key ways to contribute to humanitarian aid. Contributing can be something small, such as buying an extra can of food to donate. Or something big, such as volunteering to go on site.")
 
 
