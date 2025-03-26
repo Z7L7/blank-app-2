@@ -1,5 +1,36 @@
 ,SOURCEURL,ActionGeo_FullName,CAMEOCodeDescription,GoldsteinScale,Actor1Name,Actor1CountryCode,Actor2Name,Actor2CountryCode,NumMentions,NumArticles
-153,https://www.euronews.com/culture/2025/01/30/cate-blanchett-launches-100000-grant-for-refugee-filmmakers-amid-trumps-immigration-crackd,Afghanistan," Coerce, not specified below ",-7.0,AFGHANISTAN,AFG,MIGRANT,,2,2
-444,https://www.washingtonexaminer.com/news/world/3305416/afd-germany-mainstream-vote-immigration-restrictions/,Afghanistan," Disapprove, not specified below",-2.0,GERMAN,DEU,,,6,6
-455,https://www.washingtonexaminer.com/news/world/3305416/afd-germany-mainstream-vote-immigration-restrictions/,Afghanistan, Consider policy option,0.0,BUNDESTAG,DEU,,,6,6
-623,https://www.euronews.com/culture/2025/01/30/cate-blanchett-launches-100000-grant-for-refugee-filmmakers-amid-trumps-immigration-crackd,Afghanistan," Coerce, not specified below ",-7.0,PRESIDENT,,MIGRANT,,8,8
+60,https://www.stiripesurse.ro/presidential-election-independent-dan-says-not-democratically-fair-for-court-to-stop-a-candidate-from-running_3606291.html,Ukraine," Disapprove, not specified below",-2.0,,,POLITICIAN,,1,1
+61,https://www.stiripesurse.ro/presidential-election-independent-dan-says-not-democratically-fair-for-court-to-stop-a-candidate-from-running_3606291.html,Ukraine," Disapprove, not specified below",-2.0,,,POLITICIAN,,7,7
+62,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine", Express intent to meet or negotiate,4.0,,,MOSCOW,RUS,1,1
+63,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine", Make a visit,1.9,,,MOSCOW,RUS,2,2
+64,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Engage in diplomatic cooperation, not specified below",3.5,,,MOSCOW,RUS,2,2
+156,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine", Make a visit,1.9,CHINA,CHN,UKRAINE,UKR,4,4
+157,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Declare truce, ceasefire",9.0,CHINA,CHN,UKRAINE,UKR,1,1
+158,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Declare truce, ceasefire",9.0,CHINA,CHN,UKRAINE,UKR,4,4
+159,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Demand, not specified below",-5.0,CHINA,CHN,UKRAINIAN,UKR,4,4
+160,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Demand, not specified below",-5.0,CHINA,CHN,UKRAINE,UKR,1,1
+422,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Provide aid, not specified below",7.0,BUDAPEST,HUN,THE US,USA,5,5
+578,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine", Host a visit,2.8,MOSCOW,RUS,,,2,2
+579,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Engage in diplomatic cooperation, not specified below",3.5,MOSCOW,RUS,,,2,2
+582,https://www.yahoo.com/news/ukrainian-lawmaker-tells-bi-trump-153212868.html,"Kyiv, Kyyiv, Misto, Ukraine", Express intent to meet or negotiate,4.0,RUSSIAN,RUS,UKRAINIAN,UKR,2,2
+583,https://www.kyivpost.com/opinion/48511,Ukraine," Return, release person(s)",7.0,RUSSIA,RUS,UKRAINE,UKR,2,2
+584,https://www.kyivpost.com/opinion/48511,Ukraine," Return, release person(s)",7.0,RUSSIA,RUS,UKRAINE,UKR,8,8
+613,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine", Host a visit,2.8,UKRAINE,UKR,CHINA,CHN,1,1
+614,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine", Host a visit,2.8,UKRAINE,UKR,CHINA,CHN,4,4
+617,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Reject, not specified below",-4.0,UKRAINE,UKR,EUROPE,EUR,1,1
+618,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Reject, not specified below",-4.0,UKRAINE,UKR,EUROPE,EUR,1,1
+620,https://www.yahoo.com/news/ukrainian-lawmaker-tells-bi-trump-153212868.html,"Kyiv, Kyyiv, Misto, Ukraine", Express intent to meet or negotiate,4.0,UKRAINIAN,UKR,RUSSIAN,RUS,2,2
+621,https://www.kyivpost.com/opinion/48511,Ukraine," Provide aid, not specified below",7.0,UKRAINE,UKR,RUSSIA,RUS,2,2
+622,https://www.kyivpost.com/opinion/48511,Ukraine," Provide aid, not specified below",7.0,UKRAINE,UKR,RUSSIA,RUS,8,8
+623,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Yield, not specified below ",5.0,UKRAINE,UKR,RUSSIA,RUS,4,4
+625,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Provide aid, not specified below",7.0,UKRAINE,UKR,THE US,USA,3,3
+626,https://www.politico.eu/article/russian-strikes-on-ukraine-leave-11-dead/,"Kyiv, Kyyiv, Misto, Ukraine"," Reduce or stop aid, not specified below",-5.6,UKRAINE,UKR,UNITED STATES,USA,2,2
+627,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Reject, not specified below",-4.0,UKRAINE,UKR,UKRAINE,UKR,3,3
+628,https://www.tahlequahdailypress.com/opinion/guest-editorial-men-in-suits-ties-look-like-flightless-penguins/article_85301f16-f948-11ef-a2c3-0316d2c43f85.html,Ukraine," Make statement, not specified below",0.0,UKRAINIAN,UKR,RUSSIA,RUS,6,6
+661,https://www.kyivpost.com/opinion/48511,Ukraine, Criticize or denounce ,-2.0,UNITED STATES,USA,,,1,1
+725,https://www.kyivpost.com/opinion/48511,Ukraine," Consult, not specified below",1.0,UNITED STATES,USA,RUSSIA,RUS,2,2
+726,https://www.manilatimes.net/2025/03/09/opinion/columns/europes-powerful-tool-against-russia/2069683,Ukraine," Threaten, not specified below",-4.4,NEW YORK,USA,RUSSIAN,RUS,8,8
+727,https://www.manilatimes.net/2025/03/09/opinion/columns/europes-powerful-tool-against-russia/2069683,Ukraine," Threaten, not specified below",-4.4,NEW YORK,USA,RUSSIAN,RUS,2,2
+730,https://www.manilatimes.net/2025/03/09/opinion/columns/europes-powerful-tool-against-russia/2069683,Ukraine," Reduce relations, not specified below",-4.0,NEW YORK,USA,UKRAINE,UKR,2,2
+731,https://www.manilatimes.net/2025/03/09/opinion/columns/europes-powerful-tool-against-russia/2069683,Ukraine," Reduce relations, not specified below",-4.0,NEW YORK,USA,UKRAINE,UKR,8,8
+735,https://www.manilatimes.net/2025/03/09/opinion/columns/europes-powerful-tool-against-russia/2069683,Ukraine," Yield, not specified below ",5.0,NEW YORK,USA,UNITED STATES,USA,2,2

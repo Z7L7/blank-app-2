@@ -9,6 +9,8 @@ from modules.actors import crisis_cameo_codes, country_code  # Import dictionari
 from modules.charts import time_series_chart, bar_chart, word_cloud_image
 from modules.agent import run_expert_agent
 import json
+import networkx as nx
+import matplotlib.pyplot as plt
 
 def app():
     st.title("Acaps")
@@ -20,89 +22,72 @@ def app():
 
     # Use session state to persist country, keyword, and fetched data
     if 'country' not in st.session_state:
-        st.session_state['country'] = countries[0]  # Default to the first country
-
+        st.session_state['country'] = countries[0]
     if 'keyword' not in st.session_state:
-        st.session_state['keyword'] = keywords[0]  # Default to the first keyword
-
+        st.session_state['keyword'] = keywords[0]
     if 'acaps_data' not in st.session_state:
-        st.session_state['acaps_data'] = None  # Initialize ACAPS data as None
-
+        st.session_state['acaps_data'] = None
     if 'acaps_expert_result' not in st.session_state:
-        st.session_state['acaps_expert_result'] = None  # Initialize LLM Expert as None
+        st.session_state['acaps_expert_result'] = None
 
     # Dropdown for countries
     country = st.selectbox("Select a Country", countries, index=countries.index(st.session_state['country']))
-
-    # Dropdown for keywords (if needed)
-    # keyword = st.selectbox("Select a Keyword", keywords, index=keywords.index(st.session_state['keyword']))
-
-    # Update session state with the new selections
     st.session_state['country'] = country
-    # st.session_state['keyword'] = keyword  # Uncomment if you want to use the keyword
 
-    # Fetch ACAPS data only if the country changes or data is not already fetched
+    # Fetch ACAPS data only if not already fetched or country changed
     if st.session_state['acaps_data'] is None or st.session_state['country'] != country:
-        # Post credentials to get an authentication token
         credentials = {
-            "username": "asiyah.adetunji.workplace@gmail.com",  # Replace with your email address
-            "password": "sPAcA317&2"  # Replace with your password
+            "username": "asiyah.adetunji.workplace@gmail.com",
+            "password": "sPAcA317&2"
         }
         auth_token_response = requests.post("https://api.acaps.org/api/v1/token-auth/", credentials)
         auth_token = auth_token_response.json()['token']
 
-        # Pull data from ACAPS API, loop through the pages, and append to a pandas DataFrame
         df = pd.DataFrame()
-        request_url = ("https://api.acaps.org/api/v1/risk-list/?country=%s" % st.session_state['country'])  # Use session state for country
+        request_url = f"https://api.acaps.org/api/v1/risk-list/?country={st.session_state['country']}"
         last_request_time = datetime.now()
+
         while True:
-            # Wait to avoid throttling
             while (datetime.now() - last_request_time).total_seconds() < 1:
                 time.sleep(0.1)
-
-            # Make the request
-            response = requests.get(request_url, headers={"Authorization": "Token %s" % auth_token})
+            response = requests.get(request_url, headers={"Authorization": f"Token {auth_token}"})
             last_request_time = datetime.now()
-            response = response.json()
-            print(response)
+            response_json = response.json()
+            print(response_json)
 
-            # Append to a pandas DataFrame
-            df = df._append(pd.DataFrame(response["results"]))
+            df = df._append(pd.DataFrame(response_json["results"]))
 
-            # Loop to the next page; if we are on the last page, break the loop
-            if ("next" in response.keys()) and (response["next"] is not None):
-                request_url = response["next"]
+            if response_json.get("next"):
+                request_url = response_json["next"]
             else:
                 break
 
-        # Store the fetched data in session state
         st.session_state['acaps_data'] = df
 
-    # Use the fetched data from session state
     df = st.session_state['acaps_data']
 
     # - - - Front End - - -
     st.header("Data")
     st.dataframe(df)
     url = "https://www.acaps.org/en/"
-    st.write("This is the Risk List dataset from [ACAPS.org](%s) a nonprofit, nongovernmental website." % url)
+    st.write(f"This is the Risk List dataset from [ACAPS.org]({url}) a nonprofit, nongovernmental website.")
 
-    container = st.container(border=True)
     df2 = df[df['rationale'] != '[-]']
-    container.header("Rationale")
-    container.write(df2.to_string(columns=['rationale'], header=True, index=True))
+    with st.expander("View Rationale"):
+        if not df2.empty:
+            for idx, row in df2.iterrows():
+                st.markdown(f"**Entry {idx+1}:**")
+                st.markdown(row['rationale'])
+                st.markdown("---")
+        else:
+            st.write("No rationale available.")
 
     st.header("Analysis")
-
-     # Bar chart
     st.subheader("Sources Comparison")
     bar_chart(df, 'country', 'intensity')
 
-    # Word cloud by source (side by side)
     st.subheader("Word Clouds by Source")
     sources = df['risk_type'].unique()
-
-    # Display two word clouds per row
     for i in range(0, len(sources), 2):
         row_sources = sources[i:i+2]
         columns = st.columns(len(row_sources))
@@ -113,32 +98,121 @@ def app():
                 combined_text = " ".join(subset['rationale'].tolist())
                 word_cloud_image(combined_text, max_width=400, max_height=300)
 
+    # --------------- Enhanced Knowledge Graph Section ---------------
+    st.header("Knowledge Graph")
+
+    if not df.empty:
+        # --- 1) Build a graph from Country -> Risk Types, plus cameo-code keywords from rationale ---
+
+        # Function: parse cameo codes from rationale text (naive substring check)
+        def parse_cameo_codes(text, cameo_dict):
+            found_codes = []
+            text_lower = text.lower()
+            for cameo_keyword in cameo_dict:
+                if cameo_keyword.lower() in text_lower:
+                    found_codes.append(cameo_keyword)
+            return found_codes
+
+        # Build a graph
+        G = nx.Graph()
+        G.add_node(country)  # The main country node
+
+        # Count how often each risk_type appears
+        risk_counts = df['risk_type'].value_counts().to_dict()
+        max_count = max(risk_counts.values()) if risk_counts else 1
+
+        # For cameo codes across all rationale
+        cameo_counts = {}
+
+        # cameo_counts_by_risk[risk][code] = how many times code appears for that risk
+        cameo_counts_by_risk = {}
+
+        # Gather cameo codes and track them
+        for idx, row in df.iterrows():
+            risk = row['risk_type']
+            rationale_text = str(row.get('rationale', ''))
+            cameo_found = parse_cameo_codes(rationale_text, crisis_cameo_codes)
+
+            # Initialize cameo_counts_by_risk for each risk
+            if risk not in cameo_counts_by_risk:
+                cameo_counts_by_risk[risk] = {}
+
+            for code in cameo_found:
+                cameo_counts[code] = cameo_counts.get(code, 0) + 1
+                cameo_counts_by_risk[risk][code] = cameo_counts_by_risk[risk].get(code, 0) + 1
+
+        # Add risk type nodes + edges (country -> risk)
+        for risk, count in risk_counts.items():
+            if not G.has_node(risk):
+                G.add_node(risk)
+            G.add_edge(country, risk, weight=count)
+
+        # Add cameo code nodes + edges (risk -> cameo code)
+        for risk, cameo_dict in cameo_counts_by_risk.items():
+            for code, freq in cameo_dict.items():
+                if not G.has_node(code):
+                    G.add_node(code)
+                G.add_edge(risk, code, weight=freq)
+
+        # --- 2) Color and size nodes for better clarity ---
+        #    - country node: red, bigger
+        #    - risk nodes: blue, sized by frequency
+        #    - cameo code nodes: green, sized by cameo_counts
+        node_colors = {}
+        node_sizes = {}
+
+        node_colors[country] = 'red'
+        node_sizes[country] = 3000
+
+        for r, rc in risk_counts.items():
+            node_colors[r] = 'blue'
+            node_sizes[r] = 1000 + 300 * (rc / max_count)
+
+        cameo_max = max(cameo_counts.values()) if cameo_counts else 1
+        for code, cc in cameo_counts.items():
+            node_colors[code] = 'green'
+            node_sizes[code] = 500 + 300 * (cc / cameo_max)
+
+        # --- 3) Draw the graph with layout and color/size settings using an Axes object ---
+        fig, ax = plt.subplots(figsize=(10, 8))
+        pos = nx.spring_layout(G, seed=42, k=0.5)
+
+        # Draw nodes with individual sizes/colors
+        nx.draw_networkx_nodes(
+            G,
+            pos,
+            node_size=[node_sizes[n] for n in G.nodes()],
+            node_color=[node_colors[n] for n in G.nodes()],
+            alpha=0.8,
+            ax=ax
+        )
+        # Draw edges with width based on weight
+        edges = G.edges(data=True)
+        nx.draw_networkx_edges(
+            G, pos,
+            edgelist=edges,
+            width=[d['weight'] for (_, _, d) in edges],
+            alpha=0.6,
+            ax=ax
+        )
+        # Instead of labels inside nodes, place them next to the nodes in black using ax.text
+        for node, (x, y) in pos.items():
+            ax.text(x + 0.02, y, s=node, color='black', fontsize=9, fontweight='bold')
+
+        ax.axis('off')
+        st.pyplot(fig)
+
+    else:
+        st.write("No data available for knowledge graph.")
+
+    # --------------- End of Knowledge Graph Section ---------------
+
     st.header("LLM Agent Analysis")
-
-    # If we have all required data, show the "Generate Expert Context and Prediction" button
-    if ('acaps_data' in st.session_state and country and keywords):
-
+    if 'acaps_data' in st.session_state and country and keywords:
         acaps_data_json = st.session_state['acaps_data'].to_json(orient='records')
-        # serper_query = f"{country} {keywords} crisis after:{start_date.strftime('%Y-%m-%d')} before:{end_date.strftime('%Y-%m-%d')}"
-
         if st.button("Generate Expert Context and Prediction"):
             with st.spinner("Generating context and prediction..."):
-                result = run_expert_agent(
-                    acaps_data_json,
-                    # serper_query,
-                    # start_date.strftime("%Y-%m-%d"),  # Convert start_date to string format
-                    # end_date.strftime("%Y-%m-%d")     # Convert end_date to string format
-                )
+                result = run_expert_agent(acaps_data_json)
                 st.session_state['acaps_expert_result'] = result
-
-                # Ensure result is a string
                 if isinstance(result, dict):
                     result = json.dumps(result)
-
-
-
-
-
-
-
-    
