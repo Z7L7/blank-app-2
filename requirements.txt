@@ -9,3 +9,4 @@ matplotlib
 openai
 pytrends
 nltk
+networkx
