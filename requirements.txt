@@ -10,5 +10,3 @@ openai
 pytrends
 nltk
 networkx
-plotly.figure_factory
-scipy
