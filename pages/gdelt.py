@@ -1,56 +1,66 @@
 import streamlit as st
-from modules.actors import gdelt_wrapper, crisis_cameo_codes, country_code  # Import dictionaries correctly
+from modules.actors import gdelt_wrapper, crisis_cameo_codes, country_code
 
 def app():
     st.title("GDELT Data Viewer")
-    st.write("Welcome to the Humanitarian Aid Website!")
+    st.write("Analyze global events through the GDELT dataset")
 
-    # Get the list of countries and keywords
+    # Get lists of available options
     countries = sorted(country_code.keys())
     keywords = sorted(crisis_cameo_codes.keys())
 
-    # Use session state to persist country, keyword, and fetched data
-    if 'country' not in st.session_state:
-        st.session_state['country'] = countries[0]  # Default to the first country
-
-    if 'keyword' not in st.session_state:
-        st.session_state['keyword'] = keywords[0]  # Default to the first keyword
-
+    # Initialize session state for GDELT data
     if 'gdelt_data' not in st.session_state:
-        st.session_state['gdelt_data'] = None  # Initialize GDELT data as None
+        st.session_state['gdelt_data'] = None
+    if 'gdelt_country' not in st.session_state:
+        st.session_state['gdelt_country'] = st.session_state.get('global_country', countries[0])
+    if 'gdelt_keyword' not in st.session_state:
+        st.session_state['gdelt_keyword'] = st.session_state.get('global_keyword', keywords[0])
 
-    # Dropdown for countries
-    country = st.selectbox("Select a Country", countries, index=countries.index(st.session_state['country']))
+    # Display current selections (can be overridden)
+    col1, col2 = st.columns(2)
+    with col1:
+        current_country = st.selectbox(
+            "Select Country",
+            countries,
+            index=countries.index(st.session_state['gdelt_country']),
+            key='gdelt_country_select'
+        )
+    with col2:
+        current_keyword = st.selectbox(
+            "Select Keyword",
+            keywords,
+            index=keywords.index(st.session_state['gdelt_keyword']),
+            key='gdelt_keyword_select'
+        )
 
-    # Dropdown for keywords
-    keyword = st.selectbox("Select a Keyword", keywords, index=keywords.index(st.session_state['keyword']))
+    # Update session state with current selections
+    st.session_state['gdelt_country'] = current_country
+    st.session_state['gdelt_keyword'] = current_keyword
 
-    # Update session state with the new selections
-    st.session_state['country'] = country
-    st.session_state['keyword'] = keyword
-
-    # Fetch GDELT data only if the country or keyword changes, or data is not already fetched
-    if st.session_state['gdelt_data'] is None or st.session_state['country'] != country or st.session_state['keyword'] != keyword:
-        if st.button("Fetch Data"):
-            # Fetch the GDELT data
-            data = gdelt_wrapper(st.session_state['country'], st.session_state['keyword'])
+    # Fetch data button - only fetch when clicked
+    if st.button("Fetch GDELT Data"):
+        with st.spinner(f"Fetching data for {current_country} with keyword '{current_keyword}'..."):
+            data = gdelt_wrapper(current_country, current_keyword)
 
             if not data.empty:
-                st.success("Data fetched successfully!")
-                # Store the fetched data in session state
                 st.session_state['gdelt_data'] = data
+                st.success("Data fetched successfully!")
             else:
-                st.warning("No data found for the selected country and keyword.")
-                st.session_state['gdelt_data'] = None  # Reset data if no results
+                st.session_state['gdelt_data'] = None
+                st.warning("No data found for the selected parameters")
 
-    # Use the fetched data from session state
+    # Display results if available
     if st.session_state['gdelt_data'] is not None:
         data = st.session_state['gdelt_data']
+
+        st.header("GDELT Data Results")
         st.dataframe(data)
-        # Download button for CSV
+
+        # Download option
         st.download_button(
             label="Download as CSV",
             data=data.to_csv(index=False).encode('utf-8'),
-            file_name="gdelt_data.csv",
+            file_name=f"gdelt_{current_country}_{current_keyword}.csv",
             mime="text/csv"
         )

@@ -1,36 +1,82 @@
 ,SOURCEURL,ActionGeo_FullName,CAMEOCodeDescription,GoldsteinScale,Actor1Name,Actor1CountryCode,Actor2Name,Actor2CountryCode,NumMentions,NumArticles
-60,https://www.stiripesurse.ro/presidential-election-independent-dan-says-not-democratically-fair-for-court-to-stop-a-candidate-from-running_3606291.html,Ukraine," Disapprove, not specified below",-2.0,,,POLITICIAN,,1,1
-61,https://www.stiripesurse.ro/presidential-election-independent-dan-says-not-democratically-fair-for-court-to-stop-a-candidate-from-running_3606291.html,Ukraine," Disapprove, not specified below",-2.0,,,POLITICIAN,,7,7
-62,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine", Express intent to meet or negotiate,4.0,,,MOSCOW,RUS,1,1
-63,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine", Make a visit,1.9,,,MOSCOW,RUS,2,2
-64,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Engage in diplomatic cooperation, not specified below",3.5,,,MOSCOW,RUS,2,2
-156,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine", Make a visit,1.9,CHINA,CHN,UKRAINE,UKR,4,4
-157,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Declare truce, ceasefire",9.0,CHINA,CHN,UKRAINE,UKR,1,1
-158,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Declare truce, ceasefire",9.0,CHINA,CHN,UKRAINE,UKR,4,4
-159,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Demand, not specified below",-5.0,CHINA,CHN,UKRAINIAN,UKR,4,4
-160,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Demand, not specified below",-5.0,CHINA,CHN,UKRAINE,UKR,1,1
-422,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Provide aid, not specified below",7.0,BUDAPEST,HUN,THE US,USA,5,5
-578,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine", Host a visit,2.8,MOSCOW,RUS,,,2,2
-579,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Engage in diplomatic cooperation, not specified below",3.5,MOSCOW,RUS,,,2,2
-582,https://www.yahoo.com/news/ukrainian-lawmaker-tells-bi-trump-153212868.html,"Kyiv, Kyyiv, Misto, Ukraine", Express intent to meet or negotiate,4.0,RUSSIAN,RUS,UKRAINIAN,UKR,2,2
-583,https://www.kyivpost.com/opinion/48511,Ukraine," Return, release person(s)",7.0,RUSSIA,RUS,UKRAINE,UKR,2,2
-584,https://www.kyivpost.com/opinion/48511,Ukraine," Return, release person(s)",7.0,RUSSIA,RUS,UKRAINE,UKR,8,8
-613,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine", Host a visit,2.8,UKRAINE,UKR,CHINA,CHN,1,1
-614,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine", Host a visit,2.8,UKRAINE,UKR,CHINA,CHN,4,4
-617,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Reject, not specified below",-4.0,UKRAINE,UKR,EUROPE,EUR,1,1
-618,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Reject, not specified below",-4.0,UKRAINE,UKR,EUROPE,EUR,1,1
-620,https://www.yahoo.com/news/ukrainian-lawmaker-tells-bi-trump-153212868.html,"Kyiv, Kyyiv, Misto, Ukraine", Express intent to meet or negotiate,4.0,UKRAINIAN,UKR,RUSSIAN,RUS,2,2
-621,https://www.kyivpost.com/opinion/48511,Ukraine," Provide aid, not specified below",7.0,UKRAINE,UKR,RUSSIA,RUS,2,2
-622,https://www.kyivpost.com/opinion/48511,Ukraine," Provide aid, not specified below",7.0,UKRAINE,UKR,RUSSIA,RUS,8,8
-623,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Yield, not specified below ",5.0,UKRAINE,UKR,RUSSIA,RUS,4,4
-625,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Provide aid, not specified below",7.0,UKRAINE,UKR,THE US,USA,3,3
-626,https://www.politico.eu/article/russian-strikes-on-ukraine-leave-11-dead/,"Kyiv, Kyyiv, Misto, Ukraine"," Reduce or stop aid, not specified below",-5.6,UKRAINE,UKR,UNITED STATES,USA,2,2
-627,https://www.kyivpost.com/opinion/48437,"Kyiv, Kyyiv, Misto, Ukraine"," Reject, not specified below",-4.0,UKRAINE,UKR,UKRAINE,UKR,3,3
-628,https://www.tahlequahdailypress.com/opinion/guest-editorial-men-in-suits-ties-look-like-flightless-penguins/article_85301f16-f948-11ef-a2c3-0316d2c43f85.html,Ukraine," Make statement, not specified below",0.0,UKRAINIAN,UKR,RUSSIA,RUS,6,6
-661,https://www.kyivpost.com/opinion/48511,Ukraine, Criticize or denounce ,-2.0,UNITED STATES,USA,,,1,1
-725,https://www.kyivpost.com/opinion/48511,Ukraine," Consult, not specified below",1.0,UNITED STATES,USA,RUSSIA,RUS,2,2
-726,https://www.manilatimes.net/2025/03/09/opinion/columns/europes-powerful-tool-against-russia/2069683,Ukraine," Threaten, not specified below",-4.4,NEW YORK,USA,RUSSIAN,RUS,8,8
-727,https://www.manilatimes.net/2025/03/09/opinion/columns/europes-powerful-tool-against-russia/2069683,Ukraine," Threaten, not specified below",-4.4,NEW YORK,USA,RUSSIAN,RUS,2,2
-730,https://www.manilatimes.net/2025/03/09/opinion/columns/europes-powerful-tool-against-russia/2069683,Ukraine," Reduce relations, not specified below",-4.0,NEW YORK,USA,UKRAINE,UKR,2,2
-731,https://www.manilatimes.net/2025/03/09/opinion/columns/europes-powerful-tool-against-russia/2069683,Ukraine," Reduce relations, not specified below",-4.0,NEW YORK,USA,UKRAINE,UKR,8,8
-735,https://www.manilatimes.net/2025/03/09/opinion/columns/europes-powerful-tool-against-russia/2069683,Ukraine," Yield, not specified below ",5.0,NEW YORK,USA,UNITED STATES,USA,2,2
+2,https://www.firstpost.com/india/india-china-relationship-showing-signs-of-improvement-since-last-october-says-jaishankar-13874794.html,"Beijing, Beijing, China"," Use conventional military force, not specified below",-10.0,,,CHINA,CHN,2,2
+3,https://www.firstpost.com/india/india-china-relationship-showing-signs-of-improvement-since-last-october-says-jaishankar-13874794.html,"Beijing, Beijing, China"," Make statement, not specified below",0.0,CHINA,CHN,,,2,2
+4,https://www.firstpost.com/india/india-china-relationship-showing-signs-of-improvement-since-last-october-says-jaishankar-13874794.html,"Beijing, Beijing, China"," Engage in diplomatic cooperation, not specified below",3.5,CHINA,CHN,,,2,2
+5,https://www.firstpost.com/india/india-china-relationship-showing-signs-of-improvement-since-last-october-says-jaishankar-13874794.html,"Beijing, Beijing, China"," Use conventional military force, not specified below",-10.0,CHINA,CHN,,,2,2
+63,https://www.washingtonexaminer.com/opinion/beltway-confidential/3356647/america-must-respond-china-global-mining-spending-spree/,"Beijing, Beijing, China", Make a visit,1.9,,,COMPANIES,,10,10
+71,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan Province, Hainan, China", Make a visit,1.9,,,CHINA,CHN,2,2
+72,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China", Host a visit,2.8,,,CHINESE,CHN,8,8
+73,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China", Host a visit,2.8,,,CHINESE,CHN,2,2
+75,https://www.thenational.com.pg/pngs-2024-trade-with-china-exceeded-k17-8bil/,"Kumul, Xinjiang, China", Cooperate economically,6.4,,,CHINA,CHN,1,1
+76,https://www.thenational.com.pg/pngs-2024-trade-with-china-exceeded-k17-8bil/,"Zijin, Sichuan, China", Cooperate economically,6.4,,,CHINA,CHN,4,4
+79,https://www.thehindu.com/business/chinese-firm-bio-thera-solutions-dr-reddys-in-pact-for-proposed-biosimilars-of-jj/article69378458.ece,"Guangzhou, Guangdong, China", Express intent to meet or negotiate,4.0,,,COLOMBIA,COL,4,4
+157,https://www.tomshardware.com/tech-industry/us-expands-china-trade-blacklist-closes-susidiary-loopholes,"Beijing, Beijing, China"," Use conventional military force, not specified below",-10.0,,,HEWLETT PACKARD,USA,5,5
+280,https://aninews.in/news/world/asia/bangladeshs-chief-adviser-muhammad-yunus-arrives-in-chinas-hainan20250326192922/,"Hainan Province, Hainan, China", Make a visit,1.9,BANGLADESH,BGD,CHINA,CHN,1,1
+305,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China"," Provide aid, not specified below",7.0,COMPANY,,,,5,5
+312,https://portal.sina.com.hk/finance/finance-prnewswire/prnasia/2025/03/26/1148235/beauty-farm-announces-2024-annual-results/,"Guangdong, Jilin, China", Criticize or denounce ,-2.0,INDUSTRY,,,,10,10
+316,https://www.morningstar.com/company-reports/1268774-fresh-pork-segment-to-turn-more-favorable-for-wh-group-in-2025,"Shuanghui, Sichuan, China", Fight with small arms and light weapons,-10.0,COMPANY,,,,2,2
+321,https://www.marketscreener.com/news/latest/W-Africa-Crude-Traders-take-stock-after-Trans-Niger-restoration-49441439/,China," Engage in material cooperation, not spec below",6.0,TRADER,,CHINESE,CHN,7,7
+322,https://portal.sina.com.hk/finance/finance-prnewswire/prnasia/2025/03/26/1148235/beauty-farm-announces-2024-annual-results/,"Guangdong, Jilin, China", Criticize or denounce ,-2.0,INDUSTRY,,CHINA,CHN,5,5
+323,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China", Accuse of war crimes,-2.0,COMPANY,,CHINESE,CHN,10,10
+327,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China"," Provide aid, not specified below",7.0,COMPANY,,UNIVERSITY,,5,5
+399,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China", Express intent to meet or negotiate,4.0,CHINA,CHN,,,4,4
+401,https://www.news18.com/india/india-china-discuss-ways-to-move-ties-to-predictable-path-9276249.html,"Beijing, Beijing, China"," Consult, not specified below",1.0,CHINA,CHN,,,2,2
+402,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China", Make a visit,1.9,CHINESE,CHN,,,2,2
+403,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan Province, Hainan, China", Host a visit,2.8,CHINA,CHN,,,2,2
+404,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China", Host a visit,2.8,CHINA,CHN,,,10,10
+406,https://www.firstpost.com/india/india-china-relationship-showing-signs-of-improvement-since-last-october-says-jaishankar-13874794.html,"Beijing, Beijing, China"," Engage in diplomatic cooperation, not specified below",3.5,CHINA,CHN,,,2,2
+408,https://www.thenational.com.pg/pngs-2024-trade-with-china-exceeded-k17-8bil/,"Kumul, Xinjiang, China", Cooperate economically,6.4,CHINA,CHN,,,7,7
+409,https://www.thenational.com.pg/pngs-2024-trade-with-china-exceeded-k17-8bil/,"Zijin, Sichuan, China", Cooperate economically,6.4,CHINA,CHN,,,3,3
+410,https://www.livemint.com/politics/news/china-swoops-in-to-replace-asian-usaid-efforts-axed-by-trump-11743004707043.html,"Jing Li, Henan, China", Provide economic aid,7.4,CHINA,CHN,,,6,6
+412,https://www.moneycontrol.com/entertainment/chinese-animated-film-ne-zha-2-to-release-in-india-on-this-date-deets-inside-article-12976763.html,"Taiyi, Sichuan, China"," Return, release, not specified below",7.0,CHINESE,CHN,,,8,8
+414,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China"," Disapprove, not specified below",-2.0,CHINA,CHN,,,5,5
+418,https://aninews.in/news/world/asia/bangladeshs-chief-adviser-muhammad-yunus-arrives-in-chinas-hainan20250326192922/,"Hainan Province, Hainan, China", Host a visit,2.8,CHINA,CHN,BANGLADESH,BGD,1,1
+419,https://portal.sina.com.hk/finance/finance-prnewswire/prnasia/2025/03/26/1148235/beauty-farm-announces-2024-annual-results/,"Guangdong, Jilin, China", Criticize or denounce ,-2.0,CHINA,CHN,INDUSTRY,,5,5
+420,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Express intent to meet or negotiate,4.0,CHINESE,CHN,CHINA,CHN,2,2
+421,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China"," Consult, not specified below",1.0,CHINA,CHN,CHINA,CHN,2,2
+422,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Engage in negotiation,7.0,CHINESE,CHN,CHINA,CHN,2,2
+423,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China", Praise or endorse,3.4,CHINA,CHN,UNIVERSITY,,9,7
+424,https://www.euronews.com/green/2025/03/26/europe-challenged-to-step-up-as-chinas-solar-boom-powers-record-renewable-energy-growth,China," Demand, not specified below",-5.0,CHINA,CHN,EUROPE,EUR,10,10
+425,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China"," Consult, not specified below",1.0,HANGZHOU,CHN,CHIEF EXECUTIVE,,8,8
+426,https://inthesetimes.com/article/trump-china-foreign-policy-imperialism,"Beijing, Beijing, China", Praise or endorse,3.4,CHINA,CHN,SECRETARY OF STATE,,4,4
+427,https://www.news18.com/india/india-china-discuss-ways-to-move-ties-to-predictable-path-9276249.html,"Beijing, Beijing, China", Engage in negotiation,7.0,CHINA,CHN,REPRESENTATIVES,,3,3
+428,https://www.news18.com/india/india-china-discuss-ways-to-move-ties-to-predictable-path-9276249.html,"Beijing, Beijing, China", Engage in negotiation,7.0,CHINA,CHN,REPRESENTATIVES,,1,1
+430,https://www.tomshardware.com/tech-industry/us-expands-china-trade-blacklist-closes-susidiary-loopholes,"Beijing, Beijing, China"," Engage in material cooperation, not spec below",6.0,CHINESE,CHN,MILITARY,,2,2
+436,https://www.scmp.com/news/china/diplomacy/article/3304023/top-trade-envoys-us-and-china-speak-first-time-trumps-return-white-house,"Beijing, Beijing, China", Make a visit,1.9,CHINA,CHN,UNITED STATES,USA,4,4
+437,https://www.scmp.com/news/china/diplomacy/article/3304023/top-trade-envoys-us-and-china-speak-first-time-trumps-return-white-house,"Lifeng, Guangdong, China", Make a visit,1.9,CHINA,CHN,UNITED STATES,USA,2,2
+438,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China", Praise or endorse,3.4,ZHEJIANG,CHN,SCHOOL,,3,3
+439,https://www.thenational.com.pg/pngs-2024-trade-with-china-exceeded-k17-8bil/,"Kumul, Xinjiang, China"," Make statement, not specified below",0.0,CHINESE,CHN,,,3,3
+440,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Express intent to meet or negotiate,4.0,CHINA,CHN,CHINESE,CHN,2,2
+441,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China"," Consult, not specified below",1.0,CHINA,CHN,CHINA,CHN,2,2
+442,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Express intent to meet or negotiate,4.0,CHINESE,CHN,XI JINPING,CHN,16,8
+443,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Express intent to meet or negotiate,4.0,XI JINPING,CHN,CHINA,CHN,4,4
+444,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Express intent to meet or negotiate,4.0,CHINA,CHN,XI JINPING,CHN,4,4
+445,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Engage in negotiation,7.0,CHINESE,CHN,XI JINPING,CHN,16,8
+446,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Engage in negotiation,7.0,XI JINPING,CHN,CHINA,CHN,4,4
+447,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Engage in negotiation,7.0,CHINA,CHN,XI JINPING,CHN,4,4
+527,https://www.mirror.co.uk/news/world-news/pig-liver-successfully-transplanted-human-34934213,"Lin Wang, Hainan, China"," Investigate, not specified below",-2.0,SCIENTIST,,,,10,10
+592,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China", Praise or endorse,3.4,SCHOOL,,,,3,3
+702,https://www.kentonline.co.uk/news/national/devolved-regions-politely-entertained-but-not-listened-to-during-pandemic-142761/,"Beijing, Beijing, China"," Make statement, not specified below",0.0,LONDON,GBR,LONDON,GBR,2,2
+768,https://thediplomat.com/2025/03/the-evolution-of-us-foreign-policy-discourses-on-china/,"Beijing, Beijing, China", Provide economic aid,7.4,GOVERNANCE,,,,10,10
+805,https://inthesetimes.com/article/trump-china-foreign-policy-imperialism,"Beijing, Beijing, China"," Appeal, not specified below",3.0,ADMINISTRATION,,CHINA,CHN,8,8
+807,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China"," Consult, not specified below",1.0,CHIEF EXECUTIVE,,HANGZHOU,CHN,8,8
+808,https://thediplomat.com/2025/03/the-evolution-of-us-foreign-policy-discourses-on-china/,"Beijing, Beijing, China"," Engage in diplomatic cooperation, not specified below",3.5,ADMINISTRATION,,CHINA,CHN,2,2
+809,https://thediplomat.com/2025/03/the-evolution-of-us-foreign-policy-discourses-on-china/,"Beijing, Beijing, China"," Engage in diplomatic cooperation, not specified below",3.5,ADMINISTRATION,,CHINA,CHN,8,8
+810,https://www.brecorder.com/news/40354850/pakistan-to-issue-first-panda-bond-in-china-this-year-finance-minister,"Shaanxi, Shaanxi, China", Praise or endorse,3.4,FINANCE MINIST,,CHINA,CHN,8,8
+856,https://www.brecorder.com/news/40354850/pakistan-to-issue-first-panda-bond-in-china-this-year-finance-minister,"Shaanxi, Shaanxi, China"," Consult, not specified below",1.0,FINANCE MINIST,,PAKISTAN,PAK,10,10
+865,https://inthesetimes.com/article/trump-china-foreign-policy-imperialism,"Beijing, Beijing, China"," Consult, not specified below",1.0,PRESIDENT,,UKRAINIAN,UKR,2,2
+867,https://inthesetimes.com/article/trump-china-foreign-policy-imperialism,"Beijing, Beijing, China"," Consult, not specified below",1.0,PRESIDENT,,UKRAINIAN,UKR,6,6
+903,https://www.manilatimes.net/2025/03/27/news/national/ph-navy-eyes-control-of-2-islands-for-military-reservations/2080709,China," Arrest, detain, or charge with legal action ",-5.0,DEFENSE DEPARTMENT,,FOREIGN NATIONAL,,3,3
+1014,https://www.aol.co.uk/devolved-regions-politely-entertained-not-160913188.html,"Beijing, Beijing, China"," Consult, not specified below",1.0,IRELAND,IRL,MINIST,,2,2
+1209,https://www.news18.com/india/india-china-discuss-ways-to-move-ties-to-predictable-path-9276249.html,"Beijing, Beijing, China", Engage in negotiation,7.0,REPRESENTATIVES,,CHINA,CHN,3,3
+1210,https://www.news18.com/india/india-china-discuss-ways-to-move-ties-to-predictable-path-9276249.html,"Beijing, Beijing, China", Engage in negotiation,7.0,REPRESENTATIVES,,CHINA,CHN,1,1
+1314,https://www.tomshardware.com/tech-industry/us-expands-china-trade-blacklist-closes-susidiary-loopholes,"Beijing, Beijing, China"," Use conventional military force, not specified below",-10.0,HEWLETT PACKARD,USA,,,5,5
+1315,https://www.tomshardware.com/tech-industry/us-expands-china-trade-blacklist-closes-susidiary-loopholes,"Beijing, Beijing, China"," Reduce relations, not specified below",-4.0,MICROSOFT,USA,CHINA,CHN,10,10
+1388,https://www.brecorder.com/news/40354850/pakistan-to-issue-first-panda-bond-in-china-this-year-finance-minister,"Shaanxi, Shaanxi, China"," Consult, not specified below",1.0,PAKISTAN,PAK,FINANCE MINIST,,10,10
+1544,https://www.indiatoday.in/world/story/china-is-planning-something-big-and-the-world-isnt-ready-glbg-2699616-2025-03-26,"Beijing, Beijing, China"," Consult, not specified below",1.0,TAIWAN,TWN,,,6,6
+1683,https://www.morningstar.com/company-reports/1268774-fresh-pork-segment-to-turn-more-favorable-for-wh-group-in-2025,"Shuanghui, Sichuan, China", Fight with small arms and light weapons,-10.0,THE US,USA,,,3,3
+1691,https://www.morningstar.com/company-reports/1268774-fresh-pork-segment-to-turn-more-favorable-for-wh-group-in-2025,"Shuanghui, Sichuan, China", Fight with small arms and light weapons,-10.0,THE US,USA,COMPANY,,5,5
+1695,https://www.chinadaily.com.cn/a/202503/26/WS67e41c9ba3101d4e4dc2b098.html,"Beijing, Beijing, China"," Appeal, not specified below",3.0,WASHINGTON,USA,BEIJING,CHN,5,5
+1696,https://www.chinadaily.com.cn/a/202503/26/WS67e41c9ba3101d4e4dc2b098.html,"Beijing, Beijing, China"," Appeal, not specified below",3.0,WASHINGTON,USA,BEIJING,CHN,3,3
+1698,https://www.scmp.com/news/china/diplomacy/article/3304023/top-trade-envoys-us-and-china-speak-first-time-trumps-return-white-house,"Lifeng, Guangdong, China", Host a visit,2.8,UNITED STATES,USA,CHINA,CHN,1,1
+1739,https://inthesetimes.com/article/trump-china-foreign-policy-imperialism,"Beijing, Beijing, China"," Appeal, not specified below",3.0,UNITED STATES,USA,INTERNATIONAL MONETARY FUND,,2,2
