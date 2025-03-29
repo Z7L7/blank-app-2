@@ -1,82 +1,181 @@
 ,SOURCEURL,ActionGeo_FullName,CAMEOCodeDescription,GoldsteinScale,Actor1Name,Actor1CountryCode,Actor2Name,Actor2CountryCode,NumMentions,NumArticles
-2,https://www.firstpost.com/india/india-china-relationship-showing-signs-of-improvement-since-last-october-says-jaishankar-13874794.html,"Beijing, Beijing, China"," Use conventional military force, not specified below",-10.0,,,CHINA,CHN,2,2
-3,https://www.firstpost.com/india/india-china-relationship-showing-signs-of-improvement-since-last-october-says-jaishankar-13874794.html,"Beijing, Beijing, China"," Make statement, not specified below",0.0,CHINA,CHN,,,2,2
-4,https://www.firstpost.com/india/india-china-relationship-showing-signs-of-improvement-since-last-october-says-jaishankar-13874794.html,"Beijing, Beijing, China"," Engage in diplomatic cooperation, not specified below",3.5,CHINA,CHN,,,2,2
-5,https://www.firstpost.com/india/india-china-relationship-showing-signs-of-improvement-since-last-october-says-jaishankar-13874794.html,"Beijing, Beijing, China"," Use conventional military force, not specified below",-10.0,CHINA,CHN,,,2,2
-63,https://www.washingtonexaminer.com/opinion/beltway-confidential/3356647/america-must-respond-china-global-mining-spending-spree/,"Beijing, Beijing, China", Make a visit,1.9,,,COMPANIES,,10,10
-71,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan Province, Hainan, China", Make a visit,1.9,,,CHINA,CHN,2,2
-72,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China", Host a visit,2.8,,,CHINESE,CHN,8,8
-73,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China", Host a visit,2.8,,,CHINESE,CHN,2,2
-75,https://www.thenational.com.pg/pngs-2024-trade-with-china-exceeded-k17-8bil/,"Kumul, Xinjiang, China", Cooperate economically,6.4,,,CHINA,CHN,1,1
-76,https://www.thenational.com.pg/pngs-2024-trade-with-china-exceeded-k17-8bil/,"Zijin, Sichuan, China", Cooperate economically,6.4,,,CHINA,CHN,4,4
-79,https://www.thehindu.com/business/chinese-firm-bio-thera-solutions-dr-reddys-in-pact-for-proposed-biosimilars-of-jj/article69378458.ece,"Guangzhou, Guangdong, China", Express intent to meet or negotiate,4.0,,,COLOMBIA,COL,4,4
-157,https://www.tomshardware.com/tech-industry/us-expands-china-trade-blacklist-closes-susidiary-loopholes,"Beijing, Beijing, China"," Use conventional military force, not specified below",-10.0,,,HEWLETT PACKARD,USA,5,5
-280,https://aninews.in/news/world/asia/bangladeshs-chief-adviser-muhammad-yunus-arrives-in-chinas-hainan20250326192922/,"Hainan Province, Hainan, China", Make a visit,1.9,BANGLADESH,BGD,CHINA,CHN,1,1
-305,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China"," Provide aid, not specified below",7.0,COMPANY,,,,5,5
-312,https://portal.sina.com.hk/finance/finance-prnewswire/prnasia/2025/03/26/1148235/beauty-farm-announces-2024-annual-results/,"Guangdong, Jilin, China", Criticize or denounce ,-2.0,INDUSTRY,,,,10,10
-316,https://www.morningstar.com/company-reports/1268774-fresh-pork-segment-to-turn-more-favorable-for-wh-group-in-2025,"Shuanghui, Sichuan, China", Fight with small arms and light weapons,-10.0,COMPANY,,,,2,2
-321,https://www.marketscreener.com/news/latest/W-Africa-Crude-Traders-take-stock-after-Trans-Niger-restoration-49441439/,China," Engage in material cooperation, not spec below",6.0,TRADER,,CHINESE,CHN,7,7
-322,https://portal.sina.com.hk/finance/finance-prnewswire/prnasia/2025/03/26/1148235/beauty-farm-announces-2024-annual-results/,"Guangdong, Jilin, China", Criticize or denounce ,-2.0,INDUSTRY,,CHINA,CHN,5,5
-323,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China", Accuse of war crimes,-2.0,COMPANY,,CHINESE,CHN,10,10
-327,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China"," Provide aid, not specified below",7.0,COMPANY,,UNIVERSITY,,5,5
-399,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China", Express intent to meet or negotiate,4.0,CHINA,CHN,,,4,4
-401,https://www.news18.com/india/india-china-discuss-ways-to-move-ties-to-predictable-path-9276249.html,"Beijing, Beijing, China"," Consult, not specified below",1.0,CHINA,CHN,,,2,2
-402,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China", Make a visit,1.9,CHINESE,CHN,,,2,2
-403,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan Province, Hainan, China", Host a visit,2.8,CHINA,CHN,,,2,2
-404,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China", Host a visit,2.8,CHINA,CHN,,,10,10
-406,https://www.firstpost.com/india/india-china-relationship-showing-signs-of-improvement-since-last-october-says-jaishankar-13874794.html,"Beijing, Beijing, China"," Engage in diplomatic cooperation, not specified below",3.5,CHINA,CHN,,,2,2
-408,https://www.thenational.com.pg/pngs-2024-trade-with-china-exceeded-k17-8bil/,"Kumul, Xinjiang, China", Cooperate economically,6.4,CHINA,CHN,,,7,7
-409,https://www.thenational.com.pg/pngs-2024-trade-with-china-exceeded-k17-8bil/,"Zijin, Sichuan, China", Cooperate economically,6.4,CHINA,CHN,,,3,3
-410,https://www.livemint.com/politics/news/china-swoops-in-to-replace-asian-usaid-efforts-axed-by-trump-11743004707043.html,"Jing Li, Henan, China", Provide economic aid,7.4,CHINA,CHN,,,6,6
-412,https://www.moneycontrol.com/entertainment/chinese-animated-film-ne-zha-2-to-release-in-india-on-this-date-deets-inside-article-12976763.html,"Taiyi, Sichuan, China"," Return, release, not specified below",7.0,CHINESE,CHN,,,8,8
-414,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China"," Disapprove, not specified below",-2.0,CHINA,CHN,,,5,5
-418,https://aninews.in/news/world/asia/bangladeshs-chief-adviser-muhammad-yunus-arrives-in-chinas-hainan20250326192922/,"Hainan Province, Hainan, China", Host a visit,2.8,CHINA,CHN,BANGLADESH,BGD,1,1
-419,https://portal.sina.com.hk/finance/finance-prnewswire/prnasia/2025/03/26/1148235/beauty-farm-announces-2024-annual-results/,"Guangdong, Jilin, China", Criticize or denounce ,-2.0,CHINA,CHN,INDUSTRY,,5,5
-420,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Express intent to meet or negotiate,4.0,CHINESE,CHN,CHINA,CHN,2,2
-421,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China"," Consult, not specified below",1.0,CHINA,CHN,CHINA,CHN,2,2
-422,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Engage in negotiation,7.0,CHINESE,CHN,CHINA,CHN,2,2
-423,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China", Praise or endorse,3.4,CHINA,CHN,UNIVERSITY,,9,7
-424,https://www.euronews.com/green/2025/03/26/europe-challenged-to-step-up-as-chinas-solar-boom-powers-record-renewable-energy-growth,China," Demand, not specified below",-5.0,CHINA,CHN,EUROPE,EUR,10,10
-425,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China"," Consult, not specified below",1.0,HANGZHOU,CHN,CHIEF EXECUTIVE,,8,8
-426,https://inthesetimes.com/article/trump-china-foreign-policy-imperialism,"Beijing, Beijing, China", Praise or endorse,3.4,CHINA,CHN,SECRETARY OF STATE,,4,4
-427,https://www.news18.com/india/india-china-discuss-ways-to-move-ties-to-predictable-path-9276249.html,"Beijing, Beijing, China", Engage in negotiation,7.0,CHINA,CHN,REPRESENTATIVES,,3,3
-428,https://www.news18.com/india/india-china-discuss-ways-to-move-ties-to-predictable-path-9276249.html,"Beijing, Beijing, China", Engage in negotiation,7.0,CHINA,CHN,REPRESENTATIVES,,1,1
-430,https://www.tomshardware.com/tech-industry/us-expands-china-trade-blacklist-closes-susidiary-loopholes,"Beijing, Beijing, China"," Engage in material cooperation, not spec below",6.0,CHINESE,CHN,MILITARY,,2,2
-436,https://www.scmp.com/news/china/diplomacy/article/3304023/top-trade-envoys-us-and-china-speak-first-time-trumps-return-white-house,"Beijing, Beijing, China", Make a visit,1.9,CHINA,CHN,UNITED STATES,USA,4,4
-437,https://www.scmp.com/news/china/diplomacy/article/3304023/top-trade-envoys-us-and-china-speak-first-time-trumps-return-white-house,"Lifeng, Guangdong, China", Make a visit,1.9,CHINA,CHN,UNITED STATES,USA,2,2
-438,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China", Praise or endorse,3.4,ZHEJIANG,CHN,SCHOOL,,3,3
-439,https://www.thenational.com.pg/pngs-2024-trade-with-china-exceeded-k17-8bil/,"Kumul, Xinjiang, China"," Make statement, not specified below",0.0,CHINESE,CHN,,,3,3
-440,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Express intent to meet or negotiate,4.0,CHINA,CHN,CHINESE,CHN,2,2
-441,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China"," Consult, not specified below",1.0,CHINA,CHN,CHINA,CHN,2,2
-442,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Express intent to meet or negotiate,4.0,CHINESE,CHN,XI JINPING,CHN,16,8
-443,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Express intent to meet or negotiate,4.0,XI JINPING,CHN,CHINA,CHN,4,4
-444,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Express intent to meet or negotiate,4.0,CHINA,CHN,XI JINPING,CHN,4,4
-445,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Engage in negotiation,7.0,CHINESE,CHN,XI JINPING,CHN,16,8
-446,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Engage in negotiation,7.0,XI JINPING,CHN,CHINA,CHN,4,4
-447,https://www.bignewsnetwork.com/news/278131771/bangladesh-chief-adviser-muhammad-yunus-arrives-in-china-hainan,"Hainan, Hainan, China", Engage in negotiation,7.0,CHINA,CHN,XI JINPING,CHN,4,4
-527,https://www.mirror.co.uk/news/world-news/pig-liver-successfully-transplanted-human-34934213,"Lin Wang, Hainan, China"," Investigate, not specified below",-2.0,SCIENTIST,,,,10,10
-592,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Zhejiang, Zhejiang, China", Praise or endorse,3.4,SCHOOL,,,,3,3
-702,https://www.kentonline.co.uk/news/national/devolved-regions-politely-entertained-but-not-listened-to-during-pandemic-142761/,"Beijing, Beijing, China"," Make statement, not specified below",0.0,LONDON,GBR,LONDON,GBR,2,2
-768,https://thediplomat.com/2025/03/the-evolution-of-us-foreign-policy-discourses-on-china/,"Beijing, Beijing, China", Provide economic aid,7.4,GOVERNANCE,,,,10,10
-805,https://inthesetimes.com/article/trump-china-foreign-policy-imperialism,"Beijing, Beijing, China"," Appeal, not specified below",3.0,ADMINISTRATION,,CHINA,CHN,8,8
-807,https://qz.com/apple-tim-cook-ai-developers-china-hangzhou-deepseek-1851772447,"Hangzhou, Zhejiang, China"," Consult, not specified below",1.0,CHIEF EXECUTIVE,,HANGZHOU,CHN,8,8
-808,https://thediplomat.com/2025/03/the-evolution-of-us-foreign-policy-discourses-on-china/,"Beijing, Beijing, China"," Engage in diplomatic cooperation, not specified below",3.5,ADMINISTRATION,,CHINA,CHN,2,2
-809,https://thediplomat.com/2025/03/the-evolution-of-us-foreign-policy-discourses-on-china/,"Beijing, Beijing, China"," Engage in diplomatic cooperation, not specified below",3.5,ADMINISTRATION,,CHINA,CHN,8,8
-810,https://www.brecorder.com/news/40354850/pakistan-to-issue-first-panda-bond-in-china-this-year-finance-minister,"Shaanxi, Shaanxi, China", Praise or endorse,3.4,FINANCE MINIST,,CHINA,CHN,8,8
-856,https://www.brecorder.com/news/40354850/pakistan-to-issue-first-panda-bond-in-china-this-year-finance-minister,"Shaanxi, Shaanxi, China"," Consult, not specified below",1.0,FINANCE MINIST,,PAKISTAN,PAK,10,10
-865,https://inthesetimes.com/article/trump-china-foreign-policy-imperialism,"Beijing, Beijing, China"," Consult, not specified below",1.0,PRESIDENT,,UKRAINIAN,UKR,2,2
-867,https://inthesetimes.com/article/trump-china-foreign-policy-imperialism,"Beijing, Beijing, China"," Consult, not specified below",1.0,PRESIDENT,,UKRAINIAN,UKR,6,6
-903,https://www.manilatimes.net/2025/03/27/news/national/ph-navy-eyes-control-of-2-islands-for-military-reservations/2080709,China," Arrest, detain, or charge with legal action ",-5.0,DEFENSE DEPARTMENT,,FOREIGN NATIONAL,,3,3
-1014,https://www.aol.co.uk/devolved-regions-politely-entertained-not-160913188.html,"Beijing, Beijing, China"," Consult, not specified below",1.0,IRELAND,IRL,MINIST,,2,2
-1209,https://www.news18.com/india/india-china-discuss-ways-to-move-ties-to-predictable-path-9276249.html,"Beijing, Beijing, China", Engage in negotiation,7.0,REPRESENTATIVES,,CHINA,CHN,3,3
-1210,https://www.news18.com/india/india-china-discuss-ways-to-move-ties-to-predictable-path-9276249.html,"Beijing, Beijing, China", Engage in negotiation,7.0,REPRESENTATIVES,,CHINA,CHN,1,1
-1314,https://www.tomshardware.com/tech-industry/us-expands-china-trade-blacklist-closes-susidiary-loopholes,"Beijing, Beijing, China"," Use conventional military force, not specified below",-10.0,HEWLETT PACKARD,USA,,,5,5
-1315,https://www.tomshardware.com/tech-industry/us-expands-china-trade-blacklist-closes-susidiary-loopholes,"Beijing, Beijing, China"," Reduce relations, not specified below",-4.0,MICROSOFT,USA,CHINA,CHN,10,10
-1388,https://www.brecorder.com/news/40354850/pakistan-to-issue-first-panda-bond-in-china-this-year-finance-minister,"Shaanxi, Shaanxi, China"," Consult, not specified below",1.0,PAKISTAN,PAK,FINANCE MINIST,,10,10
-1544,https://www.indiatoday.in/world/story/china-is-planning-something-big-and-the-world-isnt-ready-glbg-2699616-2025-03-26,"Beijing, Beijing, China"," Consult, not specified below",1.0,TAIWAN,TWN,,,6,6
-1683,https://www.morningstar.com/company-reports/1268774-fresh-pork-segment-to-turn-more-favorable-for-wh-group-in-2025,"Shuanghui, Sichuan, China", Fight with small arms and light weapons,-10.0,THE US,USA,,,3,3
-1691,https://www.morningstar.com/company-reports/1268774-fresh-pork-segment-to-turn-more-favorable-for-wh-group-in-2025,"Shuanghui, Sichuan, China", Fight with small arms and light weapons,-10.0,THE US,USA,COMPANY,,5,5
-1695,https://www.chinadaily.com.cn/a/202503/26/WS67e41c9ba3101d4e4dc2b098.html,"Beijing, Beijing, China"," Appeal, not specified below",3.0,WASHINGTON,USA,BEIJING,CHN,5,5
-1696,https://www.chinadaily.com.cn/a/202503/26/WS67e41c9ba3101d4e4dc2b098.html,"Beijing, Beijing, China"," Appeal, not specified below",3.0,WASHINGTON,USA,BEIJING,CHN,3,3
-1698,https://www.scmp.com/news/china/diplomacy/article/3304023/top-trade-envoys-us-and-china-speak-first-time-trumps-return-white-house,"Lifeng, Guangdong, China", Host a visit,2.8,UNITED STATES,USA,CHINA,CHN,1,1
-1739,https://inthesetimes.com/article/trump-china-foreign-policy-imperialism,"Beijing, Beijing, China"," Appeal, not specified below",3.0,UNITED STATES,USA,INTERNATIONAL MONETARY FUND,,2,2
+0,https://www.sandiegouniontribune.com/2025/03/29/san-diego-lags-other-cities-in-grant-funding-and-needs-a-new-strategy-audit-finds/,"San Diego, California, United States"," Reject, not specified below",-4.0,VOTER,,,,10,10
+2,https://www.oxfordmail.co.uk/news/25047896.emma-watson-seen-becomes-doctor-oxford-university/,"Hollywood, California, United States", Host a visit,2.8,MILAN,ITA,UNITED STATES,USA,4,4
+4,https://www.oxfordmail.co.uk/news/25047896.emma-watson-seen-becomes-doctor-oxford-university/,"Hollywood, California, United States", Make a visit,1.9,UNITED STATES,USA,MILAN,ITA,2,2
+5,https://www.oxfordmail.co.uk/news/25047896.emma-watson-seen-becomes-doctor-oxford-university/,"Hollywood, California, United States", Make a visit,1.9,UNITED STATES,USA,MILAN,ITA,4,4
+7,https://timesofindia.indiatimes.com/world/us/harvard-scientist-fails-to-declare-frog-embryos-in-luggage-faces-deportation-as-us-cancels-visa/articleshow/119711070.cms,"Boston, Massachusetts, United States", Host a visit,2.8,FRANCE,FRA,RUSSIAN,RUS,2,2
+12,https://www.cnbc.com/2025/03/29/stablecoins-have-scored-several-milestones-as-regulatory-framework-nears-.html,"Capitol Hill, Wyoming, United States"," Make statement, not specified below",0.0,INDUSTRY,,,,3,3
+13,https://www.cnbc.com/2025/03/29/stablecoins-have-scored-several-milestones-as-regulatory-framework-nears-.html,"Capitol Hill, Wyoming, United States"," Make statement, not specified below",0.0,INDUSTRY,,UNITED STATES,USA,2,2
+14,https://www.cnbc.com/2025/03/29/stablecoins-have-scored-several-milestones-as-regulatory-framework-nears-.html,"Capitol Hill, Wyoming, United States"," Make statement, not specified below",0.0,UNITED STATES,USA,,,2,2
+23,https://www.parkrecord.com/2025/03/29/a-flaming-ball/,"Jeremy Ranch, Utah, United States", Make a visit,1.9,,,NEIGHBORHOOD,,2,2
+24,https://www.parkrecord.com/2025/03/29/a-flaming-ball/,"Summit County, Utah, United States", Praise or endorse,3.4,,,NEIGHBORHOOD,,2,2
+27,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Putnam County, Ohio, United States", Make a visit,1.9,,,STUDENT,,1,1
+28,https://k945.com/ixp/513/p/texas-stabbing-causes-38-students-to-withdraw-from-roy-j-smith-middle-school/,"Killeen Independent School District, Texas, United States", Host a visit,2.8,,,SCHOOL,,2,2
+34,https://www.mirror.co.uk/3am/celebrity-news/maura-higgins-oozes-vintage-glam-34956230,"Texas, United States", Make a visit,1.9,,,LONDON,GBR,3,3
+38,https://www.candgnews.com/news/mcfall-named-legislator-of-the-year-by-michigan-municipal-league-7915,"Hazel Park, Michigan, United States", Praise or endorse,3.4,,,GOVERNMENT,,10,10
+46,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States"," Appeal, not specified below",3.0,,,JUDGE,,10,10
+48,https://highlandcountypress.com/news/election-integrity-backers-hail-kentucky-law-banning-foreign-money-ballot-measures,"Kentucky, United States", Make a visit,1.9,,,SENATE,,5,5
+49,https://b93.net/ixp/812/p/young-scooter-dead/,"Atlanta, Georgia, United States", Make a visit,1.9,,,MALE,MDV,5,5
+50,https://b93.net/ixp/812/p/young-scooter-dead/,"Atlanta, Georgia, United States", Engage in negotiation,7.0,,,MALE,MDV,5,5
+61,https://www.castanetkamloops.net/news/Kelowna/541222/Kelowna-woman-receives-suspicious-call-from-bank,"Orlando, Florida, United States", Make pessimistic comment,-0.4,,,UNITED STATES,USA,4,4
+62,https://www.candgnews.com/news/trustees-hatch-park-expansion-gambit-7922,"Michigan, United States"," Express intent to provide aid, not specified below",5.2,,,UNITED STATES,USA,4,4
+65,https://www.parkrecord.com/2025/03/29/a-flaming-ball/,"Jeremy Ranch, Utah, United States", Make a visit,1.9,,,UNITED STATES,USA,2,2
+66,https://b93.net/ixp/812/p/young-scooter-dead/,"Georgia, United States", Make a visit,1.9,,,ATLANTA,USA,4,4
+68,https://www.southernliving.com/hot-brown-kentucky-restaurant-11705553,"Louisville, Kentucky, United States", Host a visit,2.8,,,KENTUCKY,USA,3,3
+69,https://www.sidneydailynews.com/2025/03/29/out-of-the-past-march-29/,"Shelby County, Ohio, United States", Praise or endorse,3.4,,,UNITED STATES,USA,2,2
+70,https://www.parkrecord.com/2025/03/29/a-flaming-ball/,"Jeremy Ranch, Utah, United States", Praise or endorse,3.4,,,UNITED STATES,USA,2,2
+71,https://www.theguardian.com/commentisfree/2025/mar/29/donald-trump-fertilization-ivf,"White House, District of Columbia, United States", Defend verbally,3.5,,,UNITED STATES,USA,2,2
+72,https://lombardiave.com/packers-fix-previous-mistake-bringing-back-kristian-welch,"Minnesota, United States", Sign formal agreement,8.0,,,MINNESOTA,USA,8,8
+73,https://www.sidneydailynews.com/2025/03/29/out-of-the-past-march-29/,"Shelby County, Ohio, United States"," Arrest, detain, or charge with legal action ",-5.0,,,UNITED STATES,USA,2,2
+74,https://hudsonvalleycountry.com/ixp/705/p/assaults-westchester-gas-stations-arrests/,"New Rochelle, New York, United States"," Arrest, detain, or charge with legal action ",-5.0,,,UNITED STATES,USA,2,2
+107,https://theenterpriseleader.com/2025/03/29/8788608-shares-in-dominion-energy-inc-nysed-purchased-by-norges-bank.html,"North Carolina, United States"," Make statement, not specified below",0.0,BUSINESS,,,,10,10
+110,https://www.cnbc.com/select/best-credit-union-mortgage-lenders/,"Alaska, United States"," Appeal, not specified below",3.0,EMPLOYER,,,,10,10
+112,https://www.castanetkamloops.net/news/Kelowna/541222/Kelowna-woman-receives-suspicious-call-from-bank,"Florida, United States"," Engage in material cooperation, not spec below",6.0,BANK,,,,6,6
+113,https://www.cnbc.com/select/best-credit-union-mortgage-lenders/,"Alaska, United States"," Yield, not specified below ",5.0,EMPLOYER,,,,10,10
+121,https://timesofindia.indiatimes.com/world/rest-of-world/canadian-pm-mark-carney-faces-bizarre-epstein-question-how-many-kids-did-you-/articleshow/119709372.cms,"Florida, United States", Express intent to meet or negotiate,4.0,BUSINESS,,CANADA,CAN,1,1
+130,https://www.cnbc.com/2025/03/29/these-nuclear-companies-lead-the-race-to-build-small-reactors-in-us.html,"Michigan, United States", Make a visit,1.9,COMPANY,,UNITED STATES,USA,4,4
+132,https://biztoc.com/x/65b6bdc247ce5145,"Texas, United States"," Make statement, not specified below",0.0,BUSINESS,,AUSTIN,USA,5,5
+144,https://timesofindia.indiatimes.com/world/rest-of-world/canadian-pm-mark-carney-faces-bizarre-epstein-question-how-many-kids-did-you-/articleshow/119709372.cms,"Florida, United States", Express intent to meet or negotiate,4.0,CANADA,CAN,BUSINESS,,1,1
+149,https://www.cbc.ca/news/canada/manitoba/travel-spring-break-manitoba-1.7496830,"North Dakota, United States", Make a visit,1.9,CANADIAN,CAN,UNITED STATES,USA,6,6
+169,https://www.soapcentral.com/shows/news-dateline-unforgettable-who-christian-kit-martin-know-crimes-details-true-crime-episode-revealed,"Kentucky, United States"," Arrest, detain, or charge with legal action ",-5.0,CHRISTIAN,,,,3,3
+170,https://www.soapcentral.com/shows/news-dateline-unforgettable-who-christian-kit-martin-know-crimes-details-true-crime-episode-revealed,"Kentucky, United States"," Arrest, detain, or charge with legal action ",-5.0,CHRISTIAN,,UNITED STATES,USA,1,1
+174,https://dunyanews.tv/en/Crime/876019-colombian-authorities-arrest-former-drug-lord-carlos-lehder,"Florida, United States"," Arrest, detain, or charge with legal action ",-5.0,COLOMBIA,COL,UNITED STATES,USA,2,2
+178,https://www.candgnews.com/news/mcfall-named-legislator-of-the-year-by-michigan-municipal-league-7915,"Madison Heights, Michigan, United States", Express intent to cooperate economically,5.2,POLICE,,,,2,2
+185,https://hudsonvalleycountry.com/ixp/11/p/dumpster-diving-new-york/,"California, United States"," Investigate, not specified below",-2.0,POLICE,,,,8,8
+186,https://hudsonvalleycountry.com/ixp/11/p/dumpster-diving-new-york/,"New York, United States"," Investigate, not specified below",-2.0,POLICE,,,,2,2
+187,https://www.soapcentral.com/shows/news-dateline-unforgettable-who-christian-kit-martin-know-crimes-details-true-crime-episode-revealed,"Kentucky, United States"," Arrest, detain, or charge with legal action ",-5.0,PRISON,,,,10,10
+204,https://hudsonvalleycountry.com/ixp/705/p/assaults-westchester-gas-stations-arrests/,"Westchester County, New York, United States"," Arrest, detain, or charge with legal action ",-5.0,POLICE,,UNITED STATES,USA,4,4
+209,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States", Express intent to meet or negotiate,4.0,CRIMINAL,,SAN DIEGO,USA,4,4
+210,https://hudsonvalleycountry.com/ixp/705/p/assaults-westchester-gas-stations-arrests/,"New Rochelle, New York, United States"," Arrest, detain, or charge with legal action ",-5.0,CRIMINAL,,UNITED STATES,USA,4,4
+211,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States", Express intent to meet or negotiate,4.0,CRIMINAL,,SAN DIEGO,USA,6,6
+212,https://www.southernliving.com/most-treasured-local-spots-11705572,"Texas, United States"," Impose administrative sanctions, not specified below",-5.0,CUBAN,CUB,FLORIDA,USA,8,8
+213,https://www.progressive-charlestown.com/2025/03/how-doges-cuts-to-irs-threaten-to-cost.html,"Chicago, Illinois, United States"," Make statement, not specified below",0.0,ENGINEER,,,,10,10
+214,https://www.herald-dispatch.com/news/clendenin-hopeful-for-tourism-development-with-new-flood-resilient-boat-ramp/article_62dd320e-c9b8-4709-bb23-ef66e2093340.html,"Virginia, United States", Make optimistic comment,0.4,SMALL TOWN,,,,10,10
+216,https://www.parkrecord.com/2025/03/29/a-flaming-ball/,"Jeremy Ranch, Utah, United States", Host a visit,2.8,NEIGHBORHOOD,,,,2,2
+223,https://www.echopress.com/news/local/alexandria-area-indivisible-organizes-hands-off-event,United States, Express intent to meet or negotiate,4.0,COMMUNITY,,ALEXANDRIA,EGY,10,10
+226,https://fremonttribune.com/news/local/business/article_4807859b-111e-4b7d-983f-a724b510d140.html,"Nebraska, United States", Express intent to provide economic aid,5.2,COMMUNITY,,NEBRASKA,USA,10,10
+227,https://www.parkrecord.com/2025/03/29/a-flaming-ball/,"Jeremy Ranch, Utah, United States", Make a visit,1.9,NEIGHBORHOOD,,UNITED STATES,USA,6,6
+228,https://www.parkrecord.com/2025/03/29/a-flaming-ball/,"Jeremy Ranch, Utah, United States", Praise or endorse,3.4,NEIGHBORHOOD,,UNITED STATES,USA,2,2
+229,https://www.parkrecord.com/2025/03/29/a-flaming-ball/,"Summit County, Utah, United States", Praise or endorse,3.4,NEIGHBORHOOD,,UNITED STATES,USA,4,4
+230,https://omaha.com/news/local/government-politics/elections/article_c126f04b-a389-4e61-92ec-ce0a8569a05c.html,United States," Engage in material cooperation, not spec below",6.0,COMMUNITY,,UNITED STATES,USA,8,8
+231,https://fremonttribune.com/news/local/business/article_4807859b-111e-4b7d-983f-a724b510d140.html,"Nebraska, United States", Engage in negotiation,7.0,COMMUNITY,,FIRST STATE,USA,10,10
+248,https://k945.com/ixp/513/p/texas-stabbing-causes-38-students-to-withdraw-from-roy-j-smith-middle-school/,"Killeen Independent School District, Texas, United States"," Make statement, not specified below",0.0,SCHOOL,,,,5,5
+250,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Putnam County, Ohio, United States", Host a visit,2.8,STUDENT,,,,1,1
+251,https://www.sidneydailynews.com/2025/03/29/out-of-the-past-march-29/,"Shelby County, Ohio, United States", Praise or endorse,3.4,SCHOOL,,,,5,5
+256,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Putnam County, Ohio, United States", Host a visit,2.8,STUDENT,,JUDGE,,3,3
+257,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Putnam County, Ohio, United States", Host a visit,2.8,STUDENT,,JUDGE,,1,1
+258,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Ohio, United States", Host a visit,2.8,STUDENT,,JUDGE,,1,1
+259,https://www.gulfcoastnewsnow.com/article/florida-cursive-writing-students-question-relevance/64324506,"Lee County, Florida, United States"," Make statement, not specified below",0.0,STUDENT,,LAWMAKER,,2,2
+260,https://www.gulfcoastnewsnow.com/article/florida-cursive-writing-students-question-relevance/64324506,"Florida, United States"," Make statement, not specified below",0.0,STUDENT,,LAWMAKER,,8,8
+261,https://www.belfastlive.co.uk/news/belfast-news/road-users-advised-potential-traffic-31308011,United States, Express intent to meet or negotiate,4.0,UNIVERSITY,,AMERICAN,USA,4,4
+262,https://k945.com/ixp/513/p/texas-stabbing-causes-38-students-to-withdraw-from-roy-j-smith-middle-school/,"Killeen Independent School District, Texas, United States", Make a visit,1.9,SCHOOL,,UNITED STATES,USA,4,4
+263,https://k945.com/ixp/513/p/texas-stabbing-causes-38-students-to-withdraw-from-roy-j-smith-middle-school/,"Texas, United States", Make a visit,1.9,SCHOOL,,UNITED STATES,USA,4,4
+264,https://k945.com/ixp/513/p/texas-stabbing-causes-38-students-to-withdraw-from-roy-j-smith-middle-school/,"Killeen Independent School District, Texas, United States", Retreat or surrender militarily,10.0,SCHOOL,,UNITED STATES,USA,4,4
+265,https://www.gulfcoastnewsnow.com/article/florida-cursive-writing-students-question-relevance/64324506,"Florida, United States"," Demand, not specified below",-5.0,STUDENT,,UNITED STATES,USA,4,4
+267,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Columbus Grove, Ohio, United States"," Disapprove, not specified below",-2.0,SCHOOL,,COLUMBUS,USA,8,8
+268,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Putnam County, Ohio, United States", Host a visit,2.8,STUDENT,,UNITED STATES,USA,3,3
+269,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Ohio, United States", Host a visit,2.8,STUDENT,,UNITED STATES,USA,1,1
+270,https://www.belfastlive.co.uk/news/belfast-news/road-users-advised-potential-traffic-31308011,United States, Express intent to meet or negotiate,4.0,UNIVERSITY,,UNITED STATES,USA,2,2
+271,https://www.belfastlive.co.uk/news/belfast-news/road-users-advised-potential-traffic-31308011,United States, Express intent to meet or negotiate,4.0,UNIVERSITY,,AMERICAN,USA,4,4
+276,https://www.echopress.com/news/local/alexandria-area-indivisible-organizes-hands-off-event,United States, Make pessimistic comment,-0.4,EGYPT,EGY,,,1,1
+285,https://www.chronicle.lu/opinion/23093-europe-advances-defence-ambitions-amid-shifting-us-role,"White House, District of Columbia, United States"," Appeal, not specified below",3.0,EUROPE,EUR,,,10,10
+288,https://www.easternriverinachronicle.com.au/story/8929311/skorean-inquiry-finds-adoption-program-rife-with-abuse/?cs=6364,United States," Investigate, not specified below",-2.0,EUROPEAN,EUR,,,10,10
+291,https://tylerpaper.com/news/local/tylerites-speak-in-support-of-texas-bill-that-seeks-to-shut-down-puppy-mill-pipeline/article_16194567-b28e-490b-bc24-dd588731a18b.html,"Texas, United States", Make a visit,1.9,FRANCE,FRA,UNITED STATES,USA,4,4
+294,https://www.mirror.co.uk/3am/celebrity-news/maura-higgins-oozes-vintage-glam-34956230,"Texas, United States", Make a visit,1.9,LONDON,GBR,,,3,3
+321,https://bonnercountydailybee.com/news/2025/mar/29/trump-administration-cuts-funds-to-state-health-de/,"Idaho, United States", Provide economic aid,7.4,ADMINISTRATION,,,,10,10
+327,https://www.cnet.com/home/internet/supreme-court-appears-unlikely-to-eliminate-monthly-phone-fee/,United States," Make statement, not specified below",0.0,GOVERNMENT,,PROFESSOR,,5,5
+329,https://bonnercountydailybee.com/news/2025/mar/29/trump-administration-cuts-funds-to-state-health-de/,"Idaho, United States", Provide economic aid,7.4,ADMINISTRATION,,HEALTH DEPARTMENT,,10,10
+337,https://www.oxfordmail.co.uk/news/25047896.emma-watson-seen-becomes-doctor-oxford-university/,"Hollywood, California, United States", Criticize or denounce ,-2.0,AMBASSADOR,,ITALY,ITA,2,2
+357,https://www.sidneydailynews.com/2025/03/29/out-of-the-past-march-29/,"Shelby County, Ohio, United States", Praise or endorse,3.4,PRESIDENT,,UNITED STATES,USA,1,1
+359,https://bonnercountydailybee.com/news/2025/mar/29/trump-administration-cuts-funds-to-state-health-de/,"Idaho, United States"," Make statement, not specified below",0.0,HEALTH OFFICIAL,,HEALTH DEPARTMENT,,10,10
+420,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States"," Reject, not specified below",-4.0,JUDGE,,,,6,6
+424,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States", Decline comment,-0.1,ATTORNEY,,LANDLORD,,8,8
+425,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States"," Accuse, not specified below",-2.0,ATTORNEY,,LANDLORD,,8,8
+429,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Putnam County, Ohio, United States", Make a visit,1.9,JUDGE,,STUDENT,,3,3
+430,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Putnam County, Ohio, United States", Make a visit,1.9,JUDGE,,STUDENT,,1,1
+431,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Ohio, United States", Make a visit,1.9,JUDGE,,STUDENT,,1,1
+436,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States"," Demand, not specified below",-5.0,PROSECUTOR,,UNITED STATES,USA,1,1
+437,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States"," Reject, not specified below",-4.0,JUDGE,,UNITED STATES,USA,2,2
+438,https://highlandcountypress.com/news/election-integrity-backers-hail-kentucky-law-banning-foreign-money-ballot-measures,"Kentucky, United States"," Impose administrative sanctions, not specified below",-5.0,ADVOCATE,,KENTUCKY,USA,10,10
+448,https://www.cnbc.com/select/best-credit-union-mortgage-lenders/,"Chicago, Illinois, United States", Praise or endorse,3.4,EMPLOYEE,,CREDIT UNION,,10,10
+456,https://tylerpaper.com/news/local/tylerites-speak-in-support-of-texas-bill-that-seeks-to-shut-down-puppy-mill-pipeline/article_16194567-b28e-490b-bc24-dd588731a18b.html,"Florida, United States", Make optimistic comment,0.4,EMPLOYEE,,UNITED STATES,USA,2,2
+457,https://tylerpaper.com/news/local/tylerites-speak-in-support-of-texas-bill-that-seeks-to-shut-down-puppy-mill-pipeline/article_16194567-b28e-490b-bc24-dd588731a18b.html,"Texas, United States", Make optimistic comment,0.4,EMPLOYEE,,UNITED STATES,USA,6,4
+463,https://highlandcountypress.com/news/election-integrity-backers-hail-kentucky-law-banning-foreign-money-ballot-measures,"Kentucky, United States", Host a visit,2.8,SENATE,,,,5,5
+466,https://www.cnet.com/home/internet/supreme-court-appears-unlikely-to-eliminate-monthly-phone-fee/,United States, Accede to demands for change in leadership,5.0,CONGRESS,,,,10,10
+467,https://www.cnbc.com/2025/03/29/stablecoins-have-scored-several-milestones-as-regulatory-framework-nears-.html,"New York, United States"," Return, release, not specified below",7.0,HOUSE OF REPRESENTATIVES,,,,10,10
+471,https://www.parkrecord.com/2025/03/29/park-city-pulse-legislative-session-has-many-park-city-impacts/,"Park City, Utah, United States"," Investigate crime, corruption",-2.0,CHAMBER,,BUSINESS,,1,1
+481,https://b93.net/ixp/812/p/young-scooter-dead/,"Atlanta, Georgia, United States", Host a visit,2.8,MALE,MDV,,,5,5
+482,https://muscatinejournal.com/news/local/government-politics/article_0f67aaf6-d654-5909-9a4f-94cc3e4cf18a.html,"Iowa, United States"," Provide aid, not specified below",7.0,GAZETTE,,,,6,6
+487,https://www.willmarradio.com/news/wisconsin-attorney-general-sues-elon-musk-to-block-1-million-payment-offers/article_5253e933-c759-4d17-89e7-b92f43677fb8.html,"Green Bay, Wisconsin, United States", Express intent to meet or negotiate,4.0,SPOKESMEN,,ACTIVIST,,7,7
+488,https://www.willmarradio.com/news/wisconsin-attorney-general-sues-elon-musk-to-block-1-million-payment-offers/article_5253e933-c759-4d17-89e7-b92f43677fb8.html,"Wisconsin, United States", Express intent to meet or negotiate,4.0,SPOKESMEN,,ACTIVIST,,1,1
+490,https://sofrep.com/navy/uss-jeremiah-denton-launched/,"Alabama, United States"," Make statement, not specified below",0.0,DESTROYER,,,,3,3
+501,https://www.artbiogs.co.uk/1/artists/sedgley-peter,"New York, United States", Make pessimistic comment,-0.4,MILITARY,,EGYPT,EGY,5,5
+507,https://sofrep.com/navy/uss-jeremiah-denton-launched/,"Alabama, United States"," Make statement, not specified below",0.0,DESTROYER,,THE US,USA,3,3
+576,https://www.sandiegouniontribune.com/2025/03/29/san-diego-lags-other-cities-in-grant-funding-and-needs-a-new-strategy-audit-finds/,"Oakland, California, United States", Make optimistic comment,0.4,BISHOP,,,,6,6
+632,https://www.herald-dispatch.com/business/new-barbecue-restaurant-in-logan-county-is-a-dream-come-true-for-owner/article_e01ff4e0-df76-4f8d-b23e-90edff9c6f14.html,"Monaville, Texas, United States"," Make statement, not specified below",0.0,UNITED STATES,USA,,,4,4
+633,https://bonnercountydailybee.com/news/2025/mar/29/trump-administration-cuts-funds-to-state-health-de/,"Idaho, United States", Decline comment,-0.1,IDAHO,USA,,,10,10
+636,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Columbus Grove, Ohio, United States", Make pessimistic comment,-0.4,COLUMBUS,USA,,,6,6
+637,https://www.castanetkamloops.net/news/Kelowna/541222/Kelowna-woman-receives-suspicious-call-from-bank,"Orlando, Florida, United States", Make pessimistic comment,-0.4,UNITED STATES,USA,,,8,4
+638,https://www.sandiegouniontribune.com/2025/03/29/san-diego-lags-other-cities-in-grant-funding-and-needs-a-new-strategy-audit-finds/,"San Diego, California, United States", Make optimistic comment,0.4,UNITED STATES,USA,,,2,2
+639,https://www.cnbc.com/2025/03/29/american-expats-top-advice-for-moving-abroad.html,United States, Acknowledge or claim responsibility,0.0,UNITED STATES,USA,,,4,4
+640,https://www.castanetkamloops.net/news/Kelowna/541222/Kelowna-woman-receives-suspicious-call-from-bank,"Orlando, Florida, United States", Express accord,3.4,UNITED STATES,USA,,,4,4
+643,https://www.argusobserver.com/free_access/free-app-can-reduce-harm-caused-by-gambling/article_7625fbec-161d-43f5-9c4a-3615ef46057d.html,"Oregon, United States"," Appeal for aid, not specified below",3.4,OREGON,USA,,,10,10
+644,https://www.parkrecord.com/2025/03/29/a-flaming-ball/,"Jeremy Ranch, Utah, United States", Host a visit,2.8,UNITED STATES,USA,,,2,2
+645,https://b93.net/ixp/812/p/young-scooter-dead/,"Atlanta, Georgia, United States", Host a visit,2.8,ATLANTA,USA,,,14,10
+647,https://www.cnbc.com/2025/03/29/five-stocks-to-buy-according-to-goldman-sachs.html,"Philadelphia, Pennsylvania, United States", Engage in negotiation,7.0,UNITED STATES,USA,,,2,2
+648,https://www.sidneydailynews.com/2025/03/29/out-of-the-past-march-29/,"Shelby County, Ohio, United States", Praise or endorse,3.4,UNITED STATES,USA,,,6,6
+649,https://lombardiave.com/packers-fix-previous-mistake-bringing-back-kristian-welch,"Minnesota, United States", Sign formal agreement,8.0,MINNESOTA,USA,,,8,8
+650,https://muscatinejournal.com/news/local/government-politics/article_0f67aaf6-d654-5909-9a4f-94cc3e4cf18a.html,"Iowa, United States"," Provide aid, not specified below",7.0,UNITED STATES,USA,,,2,2
+651,https://www.parkrecord.com/2025/03/29/park-city-pulse-legislative-session-has-many-park-city-impacts/,"Park City, Utah, United States", Provide economic aid,7.4,UNITED STATES,USA,,,6,6
+652,https://www.parkrecord.com/2025/03/29/park-city-pulse-legislative-session-has-many-park-city-impacts/,"Summit County, Utah, United States", Provide economic aid,7.4,UNITED STATES,USA,,,2,2
+653,https://www.sandiegouniontribune.com/2025/03/29/san-diego-lags-other-cities-in-grant-funding-and-needs-a-new-strategy-audit-finds/,"San Diego, California, United States", Provide economic aid,7.4,SAN DIEGO,USA,,,4,4
+654,https://www.sandiegouniontribune.com/2025/03/29/san-diego-lags-other-cities-in-grant-funding-and-needs-a-new-strategy-audit-finds/,"Oakland, California, United States", Provide economic aid,7.4,SAN DIEGO,USA,,,6,6
+655,https://www.sandiegouniontribune.com/2025/03/29/san-diego-lags-other-cities-in-grant-funding-and-needs-a-new-strategy-audit-finds/,"San Diego, California, United States", Provide economic aid,7.4,CALIFORNIA,USA,,,10,10
+656,https://sofrep.com/navy/uss-jeremiah-denton-launched/,"Alabama, United States", Provide military aid,8.3,THE US,USA,,,6,6
+658,https://www.jacksonprogress-argus.com/fieldlevel/dodgers-roki-sasaki-aims-for-better-showing-in-clash-vs-tigers/article_0966d8f1-ec6f-560e-8de5-ebfad6a8b805.html,"Los Angeles, California, United States"," Yield, not specified below ",5.0,DETROIT,USA,,,5,5
+660,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Columbus Grove, Ohio, United States"," Investigate, not specified below",-2.0,COLUMBUS,USA,,,3,3
+661,https://tylerpaper.com/news/local/tylerites-speak-in-support-of-texas-bill-that-seeks-to-shut-down-puppy-mill-pipeline/article_16194567-b28e-490b-bc24-dd588731a18b.html,"Texas, United States"," Disapprove, not specified below",-2.0,UNITED STATES,USA,,,2,2
+662,https://bonnercountydailybee.com/news/2025/mar/29/trump-administration-cuts-funds-to-state-health-de/,"Idaho, United States"," Reject proposal to meet, discuss, or negotiate",-4.0,IDAHO,USA,,,10,10
+663,https://www.progressive-charlestown.com/2025/03/how-doges-cuts-to-irs-threaten-to-cost.html,"White House, District of Columbia, United States"," Threaten non-force, not specified below",-5.8,UNITED STATES,USA,,,2,2
+664,https://www.sidneydailynews.com/2025/03/29/out-of-the-past-march-29/,"Shelby County, Ohio, United States"," Reduce relations, not specified below",-4.0,UNITED STATES,USA,,,8,8
+665,https://timesofindia.indiatimes.com/world/rest-of-world/canadian-pm-mark-carney-faces-bizarre-epstein-question-how-many-kids-did-you-/articleshow/119709372.cms,"Hollywood, California, United States"," Arrest, detain, or charge with legal action ",-5.0,UNITED STATES,USA,,,1,1
+666,https://timesofindia.indiatimes.com/world/rest-of-world/canadian-pm-mark-carney-faces-bizarre-epstein-question-how-many-kids-did-you-/articleshow/119709372.cms,"Florida, United States"," Arrest, detain, or charge with legal action ",-5.0,UNITED STATES,USA,,,1,1
+668,https://timesofindia.indiatimes.com/world/rest-of-world/canadian-pm-mark-carney-faces-bizarre-epstein-question-how-many-kids-did-you-/articleshow/119709372.cms,"Florida, United States"," Arrest, detain, or charge with legal action ",-5.0,UNITED STATES,USA,,,2,2
+671,https://www.al.com/betting/2025/03/duke-vs-alabama-predictions-picks-and-best-bets-for-elite-8-matchup.html,"Alabama, United States", Fight with small arms and light weapons,-10.0,ALABAMA,USA,,,20,10
+672,https://www.castanetkamloops.net/news/Kelowna/541222/Kelowna-woman-receives-suspicious-call-from-bank,"Orlando, Florida, United States"," Engage in material cooperation, not spec below",6.0,UNITED STATES,USA,BANK,,4,4
+675,https://www.cbc.ca/news/canada/manitoba/travel-spring-break-manitoba-1.7496830,"North Dakota, United States", Host a visit,2.8,UNITED STATES,USA,CANADIAN,CAN,6,6
+676,https://www.soapcentral.com/shows/news-dateline-unforgettable-who-christian-kit-martin-know-crimes-details-true-crime-episode-revealed,"Kentucky, United States"," Arrest, detain, or charge with legal action ",-5.0,KENTUCKY,USA,CHRISTIAN,,6,6
+680,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States", Express intent to meet or negotiate,4.0,SAN DIEGO,USA,CRIMINAL,,4,4
+681,https://b93.net/ixp/514/p/texas-teens-wifi-attack/,"Texas, United States"," Arrest, detain, or charge with legal action ",-5.0,TEXAS,USA,CRIMINAL,,10,10
+682,https://www.southernliving.com/most-treasured-local-spots-11705572,"Texas, United States"," Impose administrative sanctions, not specified below",-5.0,KENTUCKY,USA,CUBA,CUB,2,2
+683,https://www.parkrecord.com/2025/03/29/a-flaming-ball/,"Jeremy Ranch, Utah, United States", Host a visit,2.8,UNITED STATES,USA,NEIGHBORHOOD,,6,6
+684,https://omaha.com/news/local/government-politics/elections/article_c126f04b-a389-4e61-92ec-ce0a8569a05c.html,United States," Engage in material cooperation, not spec below",6.0,UNITED STATES,USA,COMMUNITY,,8,8
+685,https://highlandcountypress.com/news/election-integrity-backers-hail-kentucky-law-banning-foreign-money-ballot-measures,"Wyoming, United States", Provide economic aid,7.4,WYOMING,USA,CITIZEN,,10,10
+686,https://k945.com/ixp/513/p/texas-stabbing-causes-38-students-to-withdraw-from-roy-j-smith-middle-school/,"Killeen Independent School District, Texas, United States", Host a visit,2.8,UNITED STATES,USA,SCHOOL,,8,8
+688,https://tylerpaper.com/news/local/tylerites-speak-in-support-of-texas-bill-that-seeks-to-shut-down-puppy-mill-pipeline/article_16194567-b28e-490b-bc24-dd588731a18b.html,"Texas, United States", Host a visit,2.8,UNITED STATES,USA,FRANCE,FRA,4,4
+690,https://tylerpaper.com/news/local/tylerites-speak-in-support-of-texas-bill-that-seeks-to-shut-down-puppy-mill-pipeline/article_16194567-b28e-490b-bc24-dd588731a18b.html,"Fort Worth, Texas, United States"," Disapprove, not specified below",-2.0,UNITED STATES,USA,GOVERNMENT,,1,1
+691,https://tylerpaper.com/news/local/tylerites-speak-in-support-of-texas-bill-that-seeks-to-shut-down-puppy-mill-pipeline/article_16194567-b28e-490b-bc24-dd588731a18b.html,"Texas, United States"," Disapprove, not specified below",-2.0,UNITED STATES,USA,GOVERNMENT,,1,1
+693,https://www.theguardian.com/commentisfree/2025/mar/29/donald-trump-fertilization-ivf,"White House, District of Columbia, United States"," Appeal, not specified below",3.0,THE US,USA,HUNGARY,HUN,1,1
+695,https://tylerpaper.com/news/local/tylerites-speak-in-support-of-texas-bill-that-seeks-to-shut-down-puppy-mill-pipeline/article_16194567-b28e-490b-bc24-dd588731a18b.html,"Texas, United States", Criticize or denounce ,-2.0,TEXAS,USA,ADVOCATE,,4,4
+696,https://thisisreno.com/2025/03/medicaid-funds-homeless-respite/,"Nevada, United States"," Appeal, not specified below",3.0,LAS VEGAS,USA,LAWMAKER,,10,10
+697,https://muscatinejournal.com/news/local/government-politics/article_0f67aaf6-d654-5909-9a4f-94cc3e4cf18a.html,"Iowa, United States", Host a visit,2.8,UNITED STATES,USA,CHAMBER,,4,4
+699,https://www.willmarradio.com/news/wisconsin-attorney-general-sues-elon-musk-to-block-1-million-payment-offers/article_5253e933-c759-4d17-89e7-b92f43677fb8.html,"Green Bay, Wisconsin, United States", Express intent to meet or negotiate,4.0,UNITED STATES,USA,SPOKESMEN,,1,1
+700,https://muscatinejournal.com/news/local/government-politics/article_0f67aaf6-d654-5909-9a4f-94cc3e4cf18a.html,"Iowa, United States"," Provide aid, not specified below",7.0,UNITED STATES,USA,GAZETTE,,4,4
+701,https://www.herald-dispatch.com/business/two-fruth-pharmacy-employees-leaving-after-over-40-years/article_5d046c66-6bf4-4009-b697-1d1290bf933e.html,"Chicago, Illinois, United States"," Appeal, not specified below",3.0,UNITED STATES,USA,SWEDEN,SWE,4,4
+702,https://www.willmarradio.com/news/mn-senate-bill-would-require-schools-to-have-a-cardiac-plan/article_86a694ab-916b-4cc9-bd13-811fa4e2b23a.html,"Minnesota, United States"," Appeal, not specified below",3.0,MINNEAPOLIS,USA,MINNESOTA,USA,10,10
+704,https://fremonttribune.com/news/local/business/article_4807859b-111e-4b7d-983f-a724b510d140.html,"Nebraska, United States", Engage in negotiation,7.0,FIRST STATE,USA,COMMUNITY,,10,10
+707,https://www.candgnews.com/news/mcfall-named-legislator-of-the-year-by-michigan-municipal-league-7915,"Madison Heights, Michigan, United States", Express intent to cooperate economically,5.2,UNITED STATES,USA,UNITED STATES,USA,6,6
+708,https://www.gulfcoastnewsnow.com/article/florida-cursive-writing-students-question-relevance/64324506,"Lee County, Florida, United States"," Appeal, not specified below",3.0,UNITED STATES,USA,,,2,2
+709,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Putnam County, Ohio, United States", Make a visit,1.9,UNITED STATES,USA,STUDENT,,3,3
+710,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Ohio, United States", Make a visit,1.9,UNITED STATES,USA,STUDENT,,1,1
+711,https://www.sidneydailynews.com/2025/03/29/out-of-the-past-march-29/,"Shelby County, Ohio, United States", Praise or endorse,3.4,UNITED STATES,USA,,,1,1
+717,https://article.wn.com/view/2025/03/29/US_Philippines_to_strengthen_defence_ties_to_reinforce_deter/,United States," Threaten, not specified below",-4.4,UNITED STATES,USA,CHINA,CHN,2,2
+718,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States"," Reject, not specified below",-4.0,UNITED STATES,USA,,,2,2
+719,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States", Decline comment,-0.1,UNITED STATES,USA,LANDLORD,,2,2
+720,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States", Express intent to meet or negotiate,4.0,SAN DIEGO,USA,CRIMINAL,,6,6
+722,https://www.sandiegouniontribune.com/2025/03/29/alarmed-prosecutors-challenge-judge-in-court-for-mentally-ill-defendants/,"San Diego, California, United States"," Accuse, not specified below",-2.0,UNITED STATES,USA,UNITED STATES,USA,2,2
+723,https://www.parkrecord.com/2025/03/29/park-city-pulse-legislative-session-has-many-park-city-impacts/,"Park City, Utah, United States"," Investigate crime, corruption",-2.0,UNITED STATES,USA,BUSINESS,,2,2
+724,https://tylerpaper.com/news/local/tylerites-speak-in-support-of-texas-bill-that-seeks-to-shut-down-puppy-mill-pipeline/article_16194567-b28e-490b-bc24-dd588731a18b.html,"Texas, United States", Criticize or denounce ,-2.0,TEXAS,USA,ADVOCATE,,6,6
+726,https://www.sandiegouniontribune.com/2025/03/29/san-diego-lags-other-cities-in-grant-funding-and-needs-a-new-strategy-audit-finds/,"San Diego, California, United States", Make optimistic comment,0.4,UNITED STATES,USA,,,2,2
+743,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Columbus Grove, Ohio, United States"," Appeal, not specified below",3.0,DONG,,POLICE,,3,3
+744,https://www.limaohio.com/top-stories/2025/03/29/help-my-kid-before-i-lose-her-a-columbus-grove-mothers-search-for-help-amid-cyberbullying/,"Putnam County, Ohio, United States"," Appeal, not specified below",3.0,DONG,,POLICE,,3,3

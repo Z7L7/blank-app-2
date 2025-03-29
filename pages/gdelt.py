@@ -64,3 +64,7 @@ def app():
             file_name=f"gdelt_{current_country}_{current_keyword}.csv",
             mime="text/csv"
         )
+
+        st.header("Description vs Goldstein Scale")
+        st.write("A scale developed by Joshua S. Goldstein that measures international events from -10.0 to +10.0. Negative values indicate conflict, positive values indicate cooperation.")
+        st.bar_chart(data, x="CAMEOCodeDescription", y="GoldsteinScale", color="#ffaa00", horizontal=True)
