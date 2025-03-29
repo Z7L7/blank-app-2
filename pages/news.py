@@ -120,5 +120,7 @@ def app():
                 st.write(f"**Date:** {formatted_date}")
                 st.markdown(summary, unsafe_allow_html=True)
                 st.markdown("---")
+                if summary != "No Summary Available":
+                    word_cloud_image(summary)
     else:
         st.info("Use the slider and button above to fetch the latest reports.")
