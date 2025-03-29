@@ -53,9 +53,14 @@ def app():
         value=10,
         step=1
     )
-
+    
     countries = sorted(country_code.keys())
     keywords = sorted(crisis_cameo_codes.keys())
+
+    # Display current selections from sidebar
+    country = st.session_state.get('global_country', countries[0])
+    keyword = st.session_state.get('global_keyword', keywords[0])
+
 
     # Use session state to persist country, keyword, and fetched data
     if 'country' not in st.session_state:
@@ -67,18 +72,26 @@ def app():
     if 'gdelt_data' not in st.session_state:
         st.session_state['gdelt_data'] = None  # Initialize GDELT data as None
 
-    # Dropdown for countries
-    country = st.selectbox("Select a Country", countries, index=countries.index(st.session_state['country']))
+    # # Dropdown for countries
+    # country = st.selectbox("Select a Country", countries, index=countries.index(st.session_state['country']))
 
-    # Dropdown for keywords
-    keyword = st.selectbox("Select a Keyword", keywords, index=keywords.index(st.session_state['keyword']))
+    # # Dropdown for keywords
+    # keyword = st.selectbox("Select a Keyword", keywords, index=keywords.index(st.session_state['keyword']))
 
     # Update session state with the new selections
     st.session_state['country'] = country
     st.session_state['keyword'] = keyword
 
+
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write(f"**Current Country:** {country}")
+    with col2:
+        st.write(f"**Current Keyword:** {keyword}")
+
     
 
+    #Found problem where if the website doesn't have a report on the topic it just uses the initial search conditions instead
     # Button to fetch data
     if st.button("Fetch Reports"):
         with st.spinner("Fetching reports..."):

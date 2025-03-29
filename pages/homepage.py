@@ -7,6 +7,8 @@ def app():
     st.title("Finding Hope")
     st.write("Welcome to the Humanitarian Aid Website!")
 
+    st.divider()
+
     st.header("How to Use This Website")
     st.write("""
         Choose which country and keyword you wish to explore using the dropdown boxes

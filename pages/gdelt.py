@@ -17,26 +17,36 @@ def app():
     if 'gdelt_keyword' not in st.session_state:
         st.session_state['gdelt_keyword'] = st.session_state.get('global_keyword', keywords[0])
 
-    # Display current selections (can be overridden)
+     # Display current selections from sidebar
+    current_country = st.session_state.get('global_country', countries[0])
+    current_keyword = st.session_state.get('global_keyword', keywords[0])
+
     col1, col2 = st.columns(2)
     with col1:
-        current_country = st.selectbox(
-            "Select Country",
-            countries,
-            index=countries.index(st.session_state['gdelt_country']),
-            key='gdelt_country_select'
-        )
+        st.write(f"**Current Country:** {current_country}")
     with col2:
-        current_keyword = st.selectbox(
-            "Select Keyword",
-            keywords,
-            index=keywords.index(st.session_state['gdelt_keyword']),
-            key='gdelt_keyword_select'
-        )
+        st.write(f"**Current Keyword:** {current_keyword}")
 
-    # Update session state with current selections
-    st.session_state['gdelt_country'] = current_country
-    st.session_state['gdelt_keyword'] = current_keyword
+    # # Display current selections (can be overridden)
+    # col1, col2 = st.columns(2)
+    # with col1:
+    #     current_country = st.selectbox(
+    #         "Select Country",
+    #         countries,
+    #         index=countries.index(st.session_state['gdelt_country']),
+    #         key='gdelt_country_select'
+    #     )
+    # with col2:
+    #     current_keyword = st.selectbox(
+    #         "Select Keyword",
+    #         keywords,
+    #         index=keywords.index(st.session_state['gdelt_keyword']),
+    #         key='gdelt_keyword_select'
+    #     )
+
+    # # Update session state with current selections
+    # st.session_state['gdelt_country'] = current_country
+    # st.session_state['gdelt_keyword'] = current_keyword
 
     # Fetch data button - only fetch when clicked
     if st.button("Fetch GDELT Data"):
