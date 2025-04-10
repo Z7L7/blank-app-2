@@ -142,9 +142,7 @@ def run_llm_analysis():
 
 
 def fetch_serper_results(query, num_results=10):
-    """
-    Fetches Google search results using the SERPER API.
-    """
+    """ Fetches Google search results using the SERPER API. """
     serper_api_key = st.secrets["SERPER_API_KEY"]
     headers = {
         "X-API-KEY": serper_api_key,
@@ -164,9 +162,7 @@ def fetch_serper_results(query, num_results=10):
 
 
 def parse_serper_results(results):
-    """
-    Parses SERPER API results into a pandas DataFrame.
-    """
+    """ Parses SERPER API results into a pandas DataFrame. """
     if "organic" not in results:
         st.error("No organic results found.")
         return pd.DataFrame()
