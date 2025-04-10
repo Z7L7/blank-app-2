@@ -100,6 +100,7 @@ def app():
         if data:
             reports = data.get("data", [])
             st.success(f"Number of reports fetched: {len(reports)}")
+            
 
             for report in reports:
                 fields = report.get("fields", {})

@@ -91,9 +91,9 @@ def app():
             else:
                 st.write("No rationale available.")
 
-        st.header("Analysis")
-        st.subheader("Sources Comparison")
-        bar_chart(df, 'country', 'intensity')
+        # st.header("Analysis")
+        # st.subheader("Sources Comparison")
+        # bar_chart(df, 'impact', 'risk_type')
 
         st.subheader("Word Clouds by Source")
         sources = df['risk_type'].unique()

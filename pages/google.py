@@ -15,9 +15,7 @@ def app():
     st.title("Google Search Analysis")
     st.write("Welcome to the Google Search Data Analysis Page!")
 
-    # -----------------------------
-    # 1) Initialize session state
-    # -----------------------------
+    # Initialize session state
     if 'query' not in st.session_state:
         st.session_state['query'] = ""
     if 'serper_data' not in st.session_state:
@@ -29,9 +27,7 @@ def app():
     if 'word_cloud' not in st.session_state:
         st.session_state['word_cloud'] = ""
 
-    # --------------------------------
-    # 2) User Input: Search Query
-    # --------------------------------
+    # User Input: Search Query
     st.header("Search Query")
     query = st.text_input("Enter your search query:", value=st.session_state['query'])
 
@@ -60,9 +56,8 @@ def app():
 
                     st.success("Search results fetched and stored successfully!")
 
-    # -----------------------------------------------------------
-    # 3) Display SERPER Data + Sentiment if present in session
-    # -----------------------------------------------------------
+
+    # Display SERPER Data + Sentiment if present in session
     if st.session_state['serper_data'] is not None and st.session_state['sentiment_data'] is not None:
         st.header("Google Search Results Data with Sentiment")
 
@@ -84,16 +79,12 @@ def app():
 
         st.dataframe(combined_df)
 
-    # --------------------------------------
-    # 4) Display Word Cloud if we have text
-    # --------------------------------------
+    # Display Word Cloud if we have text
     if st.session_state.get('word_cloud'):
         st.header("Word Cloud of Article Snippets")
         word_cloud_image(st.session_state['word_cloud'])
 
-    # ---------------------------------------------------------------------
-    # 5) LLM Agent Analysis: either show old results or allow new analysis
-    # ---------------------------------------------------------------------
+    # LLM Agent Analysis: either show old results or allow new analysis
     st.header("LLM Agent Analysis")
 
     # If we already have an existing LLM result in session, show it:
@@ -135,10 +126,7 @@ def app():
 
 
 def run_llm_analysis():
-    """
-    Helper function to call run_expert_agent with the current serper_data
-    from session state. Returns the result dict.
-    """
+    """ Helper function to call run_expert_agent with the current serper_data from session state. Returns the result dict."""
     serper_data_json = st.session_state['serper_data'].to_json(orient='records')
     try:
         result = run_expert_agent(
